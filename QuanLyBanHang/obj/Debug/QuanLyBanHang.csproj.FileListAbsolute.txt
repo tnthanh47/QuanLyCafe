@@ -1,0 +1,40 @@
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.fTableManager.resources
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAcountProfile.resources
+C:\Users\Thanh Le Nguyen\Desktop\winform\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAdmin.resources
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAcountProfile.resources
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAdmin.resources
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.fTableManager.resources
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Documents\GitHub\QuanLyCafe\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAcountProfile.resources
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAdmin.resources
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fLogin.resources
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fTableManager.resources
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fManager.resources
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fStaff.resources
