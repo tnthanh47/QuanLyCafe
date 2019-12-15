@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyBanHang.DTO
 {
-    class Menu
+    public class Menu
     {
         private string foodName;
         private float price;
