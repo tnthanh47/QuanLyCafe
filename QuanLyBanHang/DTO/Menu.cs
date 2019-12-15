@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyBanHang.DTO
 {
-    class Menu
+    public class Menu
     {
         private string foodName;
         private float price;
@@ -24,8 +24,8 @@ namespace QuanLyBanHang.DTO
         {
             this.FoodName = row["NAME"].ToString();
             this.Count = (int)row["COUNT"];
-            this.Price = (float)row["PRICE"];
-            this.TotalPrice = (float)row["TOTALPRICE"];
+            this.Price = (float)Convert.ToInt32((row["PRICE"]));
+            this.TotalPrice = (float)Convert.ToInt32((row["TOTALPRICE"]));
         }
         public string FoodName { get => foodName; set => foodName = value; }
         public float Price { get => price; set => price = value; }
