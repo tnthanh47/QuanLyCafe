@@ -39,6 +39,7 @@ C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\bin\Debug\Bunifu_UI_v1
 C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fStaff.resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
@@ -55,6 +56,8 @@ D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComp
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
 =======
+=======
+>>>>>>> master
 C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
 C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
 C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
@@ -82,6 +85,7 @@ C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug
 C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Interfaces.xml
 C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Linq.xml
 C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.PlatformServices.xml
+<<<<<<< HEAD
 >>>>>>> master
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\LinqToTwitter.AspNet.dll
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\LinqToTwitter.netstandard.dll
@@ -95,3 +99,5 @@ D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Core.xml
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Interfaces.xml
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Linq.xml
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.PlatformServices.xml
+=======
+>>>>>>> master
