@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTableManager));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAddFood = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,8 +41,6 @@
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lsvBill = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -61,8 +60,13 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.colum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lbTotalPrice = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFood)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -73,7 +77,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -91,6 +94,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(688, 95);
             this.panel2.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(609, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -181,8 +195,10 @@
             // 
             this.lsvBill.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
+            this.colum1,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
             this.lsvBill.HideSelection = false;
             this.lsvBill.Location = new System.Drawing.Point(7, 18);
             this.lsvBill.Name = "lsvBill";
@@ -191,19 +207,10 @@
             this.lsvBill.UseCompatibleStateImageBehavior = false;
             this.lsvBill.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "ID FOOD";
-            this.columnHeader1.Width = 98;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "COUNT";
-            this.columnHeader2.Width = 87;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.lbTotalPrice);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.pictureBox3);
@@ -222,7 +229,7 @@
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox4.Enabled = false;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(161, 46);
+            this.pictureBox4.Location = new System.Drawing.Point(111, 48);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 28);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,7 +239,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(50, 34);
+            this.button2.Location = new System.Drawing.Point(0, 36);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(149, 50);
             this.button2.TabIndex = 10;
@@ -245,7 +252,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Enabled = false;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(370, 45);
+            this.pictureBox3.Location = new System.Drawing.Point(273, 45);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -257,9 +264,9 @@
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox2.Enabled = false;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(596, 49);
+            this.pictureBox2.Location = new System.Drawing.Point(463, 58);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 56);
+            this.pictureBox2.Size = new System.Drawing.Size(44, 47);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -267,14 +274,14 @@
             // cbSwitchTable
             // 
             this.cbSwitchTable.FormattingEnabled = true;
-            this.cbSwitchTable.Location = new System.Drawing.Point(50, 90);
+            this.cbSwitchTable.Location = new System.Drawing.Point(0, 92);
             this.cbSwitchTable.Name = "cbSwitchTable";
             this.cbSwitchTable.Size = new System.Drawing.Size(149, 28);
             this.cbSwitchTable.TabIndex = 4;
             // 
             // nmDiscount
             // 
-            this.nmDiscount.Location = new System.Drawing.Point(268, 93);
+            this.nmDiscount.Location = new System.Drawing.Point(171, 93);
             this.nmDiscount.Name = "nmDiscount";
             this.nmDiscount.Size = new System.Drawing.Size(149, 26);
             this.nmDiscount.TabIndex = 6;
@@ -283,7 +290,7 @@
             // btnDiscount
             // 
             this.btnDiscount.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiscount.Location = new System.Drawing.Point(268, 36);
+            this.btnDiscount.Location = new System.Drawing.Point(171, 36);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(149, 50);
             this.btnDiscount.TabIndex = 5;
@@ -295,9 +302,9 @@
             // 
             this.btnPay.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btnPay.Location = new System.Drawing.Point(458, 36);
+            this.btnPay.Location = new System.Drawing.Point(338, 36);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(211, 83);
+            this.btnPay.Size = new System.Drawing.Size(181, 84);
             this.btnPay.TabIndex = 4;
             this.btnPay.Text = "Thanh toán";
             this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -415,16 +422,36 @@
             this.bunifuElipse2.ElipseRadius = 50;
             this.bunifuElipse2.TargetControl = this;
             // 
-            // pictureBox1
+            // colum1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(609, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.colum1.Text = "Tên món";
+            this.colum1.Width = 110;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Giá";
+            this.columnHeader3.Width = 86;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Số lượng";
+            this.columnHeader4.Width = 98;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Thành tiền";
+            this.columnHeader5.Width = 103;
+            // 
+            // lbTotalPrice
+            // 
+            this.lbTotalPrice.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbTotalPrice.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalPrice.Location = new System.Drawing.Point(526, 36);
+            this.lbTotalPrice.Name = "lbTotalPrice";
+            this.lbTotalPrice.Size = new System.Drawing.Size(162, 82);
+            this.lbTotalPrice.TabIndex = 12;
+            this.lbTotalPrice.Text = "0";
+            this.lbTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fTableManager
             // 
@@ -439,6 +466,7 @@
             this.Text = "Phần mềm quản lí quán Cafe";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFood)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -449,7 +477,6 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -482,10 +509,13 @@
         private System.Windows.Forms.Button btnFloor1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ColumnHeader colum1;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Label lbTotalPrice;
     }
 }

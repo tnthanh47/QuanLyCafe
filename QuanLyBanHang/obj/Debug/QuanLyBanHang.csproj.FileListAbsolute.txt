@@ -38,3 +38,30 @@ C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHan
 C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 C:\Users\Thanh Le Nguyen\Desktop\New folder\QuanLyBanHang\obj\Debug\QuanLyBanHang.fStaff.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAcountProfile.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAdmin.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fLogin.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fManager.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fStaff.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fTableManager.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\LinqToTwitter.AspNet.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\LinqToTwitter.netstandard.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Core.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Interfaces.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Linq.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.PlatformServices.dll
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Core.xml
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Interfaces.xml
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Linq.xml
+C:\Users\Thanh Le Nguyen\Desktop\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.PlatformServices.xml

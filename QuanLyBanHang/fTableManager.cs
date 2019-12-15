@@ -1,14 +1,11 @@
-﻿using QuanLyBanHang.DAO;
+﻿using LinqToTwitter;
+using QuanLyBanHang.DAO;
 using QuanLyBanHang.DTO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Menu = QuanLyBanHang.DTO.Menu;
 
 namespace QuanLyBanHang
 {
@@ -46,13 +43,19 @@ namespace QuanLyBanHang
         void ShowBill(int id)
         {
             lsvBill.Items.Clear();
-            List<BillInfo> listBillinfo = BillInfoDAO.Instance.GetListBillInfo(BillDAO.Instance.GetUncheckedBillByTableID(id));
-            foreach (BillInfo item in listBillinfo)
+            float totalPrice = 0;
+            List<Menu> listBillinfo = MenuDAO.Instance.GetListMenu(id);
+            foreach (Menu item in listBillinfo)
             {
-                ListViewItem lsvItems = new ListViewItem(item.IdFood.ToString());
+                ListViewItem lsvItems = new ListViewItem(item.FoodName.ToString());
+                lsvItems.SubItems.Add(item.Price.ToString());
                 lsvItems.SubItems.Add(item.Count.ToString());
+                lsvItems.SubItems.Add(item.TotalPrice.ToString());
+                totalPrice += item.TotalPrice;
                 lsvBill.Items.Add(lsvItems);
             }
+            Culture culture = new Culture();
+            lbTotalPrice.Text = totalPrice.ToString();
         }
 
         #endregion
