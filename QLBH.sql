@@ -1,5 +1,5 @@
-﻿CREATE DATABASE QLBH
-USE QLBH
+﻿CREATE DATABASE QLBH1
+USE QLBH1
 
 -- Food
 -- Table
@@ -161,7 +161,7 @@ INSERT FOODCATEGORY(ID,NAME) VALUES (5,N'Đồ ăn')
 SELECT * FROM FOODCATEGORY 
 --thêm nước uống và đồ ăn
 
-set identity_insert dbo.Food on 
+set identity_insert dbo.Food off
 
 -- id: 1-Tra
 INSERT into Food(id,Name,idCategory,price) values ('01','Oolong Milk Tea','1','45000')
