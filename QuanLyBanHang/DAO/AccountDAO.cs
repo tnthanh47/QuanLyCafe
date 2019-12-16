@@ -27,5 +27,15 @@ namespace QuanLyBanHang.DAO
 
             return result.Rows.Count > 0;
         }
+        public bool issTaff(string userName, string passWord)
+        {
+            int a = 0;
+            string query = "select * from Account where UserName = '" + userName + "' and TYPE = '" + a + "'";
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            if (result.Rows.Count > 0)
+                return true;
+            else return false;
+        }
     }
 }
