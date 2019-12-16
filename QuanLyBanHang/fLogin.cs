@@ -24,19 +24,31 @@ namespace QuanLyBanHang
         {
             return AccountDAO.Instance.Login(userName, passWord);
         }
+        bool isStafff(string userName,string passWord)
+        {
+            return AccountDAO.Instance.issTaff(userName, passWord);
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string userName = txbLoginAccount.Text;
-            string passWord = txbLoginPassword.Text;
-            if (login(userName, passWord))
+            string username = txbLoginAccount.Text;
+            string password = txbLoginPassword.Text;
+            if (login(username, password)&& isStafff(username,password)==false)
             {
-                fManager manager = new fManager();
+                fManager manage = new fManager();
                 this.Hide();
-                manager.ShowDialog();
+                manage.ShowDialog();
                 this.Show();
             }
-            else
+            else if (login(username, password) && isStafff(username, password) )
+            {
+                fStaff staff = new fStaff();
+                this.Hide();
+                staff.ShowDialog();
+                this.Show();
+                
+            }
+            else if(login(username,password)==false)
             {
                 MessageBox.Show("Nhập sai tên hoặc mặt khẩu", "Thông báo", MessageBoxButtons.OK);
             }
