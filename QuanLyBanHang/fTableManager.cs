@@ -4,7 +4,9 @@ using QuanLyBanHang.DTO;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
+using Category = QuanLyBanHang.DTO.Category;
 using Menu = QuanLyBanHang.DTO.Menu;
 
 namespace QuanLyBanHang
@@ -16,9 +18,10 @@ namespace QuanLyBanHang
         {
             InitializeComponent();
             LoadTable();
+            LoadCategory();
         }
         #region Method
-        void LoadTable()
+        void LoadTable()  // hàm để hiển thị các bàn
         {
             List<Table> tableList = TableDAO.Instance.LoadTableList();
 
@@ -40,7 +43,7 @@ namespace QuanLyBanHang
                
             }
         }
-        void ShowBill(int id)
+        void ShowBill(int id)   // hàm show bill khi click vào bàn
         {
             lsvBill.Items.Clear();
             float totalPrice = 0;
@@ -54,10 +57,21 @@ namespace QuanLyBanHang
                 totalPrice += item.TotalPrice;
                 lsvBill.Items.Add(lsvItems);
             }
-            Culture culture = new Culture();
-            lbTotalPrice.Text = totalPrice.ToString();
+            CultureInfo culture = new CultureInfo("vi-VN");
+            lbTotalPrice.Text = totalPrice.ToString("c",culture);
         }
-
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
+            cbCategory.DataSource = listCategory;
+            cbCategory.DisplayMember = "NAME";
+        }
+        void LoadFoodByCategory(int id)
+        {
+            List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
+            cbFood.DataSource = listFood;
+            cbFood.DisplayMember = "NAME";
+        }
         #endregion
         #region Events
 
@@ -70,13 +84,23 @@ namespace QuanLyBanHang
         {
             this.Close();
         }
-        private void btnFloor1_Click(object sender, EventArgs e)
+        private void btnFloor1_Click(object sender, EventArgs e)  // tầng 1
         {
             flpTable.Show();
         }
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e) // thay đổi Loại món ăn
+        {
+            int id = 0;
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedItem == null)
+                return;
+            Category selected = cb.SelectedItem as Category;
+            id = selected.Id;
+            LoadFoodByCategory(id);
+        }
+
+
         #endregion
-
-
 
 
     }

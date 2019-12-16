@@ -41,7 +41,12 @@
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lsvBill = new System.Windows.Forms.ListView();
+            this.colum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbTotalPrice = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -60,11 +65,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.colum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lbTotalPrice = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFood)).BeginInit();
@@ -181,6 +181,7 @@
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(278, 28);
             this.cbCategory.TabIndex = 0;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // panel3
             // 
@@ -207,6 +208,26 @@
             this.lsvBill.UseCompatibleStateImageBehavior = false;
             this.lsvBill.View = System.Windows.Forms.View.Details;
             // 
+            // colum1
+            // 
+            this.colum1.Text = "Tên món";
+            this.colum1.Width = 110;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Giá";
+            this.columnHeader3.Width = 86;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Số lượng";
+            this.columnHeader4.Width = 98;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Thành tiền";
+            this.columnHeader5.Width = 103;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -223,6 +244,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(694, 132);
             this.panel4.TabIndex = 3;
+            // 
+            // lbTotalPrice
+            // 
+            this.lbTotalPrice.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbTotalPrice.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalPrice.Location = new System.Drawing.Point(526, 36);
+            this.lbTotalPrice.Name = "lbTotalPrice";
+            this.lbTotalPrice.Size = new System.Drawing.Size(162, 82);
+            this.lbTotalPrice.TabIndex = 12;
+            this.lbTotalPrice.Text = "0";
+            this.lbTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
             // 
@@ -421,37 +453,6 @@
             // 
             this.bunifuElipse2.ElipseRadius = 50;
             this.bunifuElipse2.TargetControl = this;
-            // 
-            // colum1
-            // 
-            this.colum1.Text = "Tên món";
-            this.colum1.Width = 110;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Giá";
-            this.columnHeader3.Width = 86;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Số lượng";
-            this.columnHeader4.Width = 98;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Thành tiền";
-            this.columnHeader5.Width = 103;
-            // 
-            // lbTotalPrice
-            // 
-            this.lbTotalPrice.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lbTotalPrice.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotalPrice.Location = new System.Drawing.Point(526, 36);
-            this.lbTotalPrice.Name = "lbTotalPrice";
-            this.lbTotalPrice.Size = new System.Drawing.Size(162, 82);
-            this.lbTotalPrice.TabIndex = 12;
-            this.lbTotalPrice.Text = "0";
-            this.lbTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fTableManager
             // 
