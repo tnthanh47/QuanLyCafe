@@ -25,3 +25,32 @@ D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.Generate
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\LinqToTwitter.AspNet.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\LinqToTwitter.netstandard.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\Newtonsoft.Json.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Core.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Interfaces.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Linq.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.PlatformServices.dll
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\Newtonsoft.Json.xml
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Core.xml
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Interfaces.xml
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.Linq.xml
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\bin\Debug\System.Reactive.PlatformServices.xml
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.Admin.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAcountProfile.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fAdmin.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fLogin.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fManager.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fStaff.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.fTableManager.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\lập trình trực quan đồ án\Quablicaphe\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
