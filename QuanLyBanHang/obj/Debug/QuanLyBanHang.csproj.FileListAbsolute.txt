@@ -25,3 +25,8 @@ D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.Generate
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
 D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.UsC_Revuene.resources
+D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.UsC_Drink.resources
+D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.UsC_Food.resources
+D:\GitKraken\Qu-n-L-Coffee\QuanLyBanHang\obj\Debug\QuanLyBanHang.UsC_Staff.resources

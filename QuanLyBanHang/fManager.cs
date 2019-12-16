@@ -27,7 +27,7 @@ namespace QuanLyBanHang
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            fAdmin admin = new fAdmin();
+            Admin admin = new Admin();
             this.Hide();
             admin.ShowDialog();
             this.Show();
