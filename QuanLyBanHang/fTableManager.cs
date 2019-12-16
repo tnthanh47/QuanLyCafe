@@ -57,6 +57,7 @@ namespace QuanLyBanHang
                 totalPrice += item.TotalPrice;
                 lsvBill.Items.Add(lsvItems);
             }
+<<<<<<< HEAD
             CultureInfo culture = new CultureInfo("vi-VN");
             lbTotalPrice.Text = totalPrice.ToString("c",culture);
         }
@@ -71,6 +72,10 @@ namespace QuanLyBanHang
             List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
             cbFood.DataSource = listFood;
             cbFood.DisplayMember = "NAME";
+=======
+            Culture culture = new Culture();
+            txb_money.Text = totalPrice.ToString();
+>>>>>>> master
         }
         #endregion
         #region Events
@@ -88,6 +93,7 @@ namespace QuanLyBanHang
         {
             flpTable.Show();
         }
+<<<<<<< HEAD
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e) // thay đổi Loại món ăn
         {
             int id = 0;
@@ -98,10 +104,17 @@ namespace QuanLyBanHang
             id = selected.Id;
             LoadFoodByCategory(id);
         }
+=======
+>>>>>>> master
 
 
         #endregion
 
+        #endregion
 
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

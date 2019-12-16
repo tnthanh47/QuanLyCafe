@@ -30,15 +30,57 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTableManager));
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.txb_money = new System.Windows.Forms.TextBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.lsvBill = new System.Windows.Forms.ListView();
+            this.colum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.floor = new System.Windows.Forms.Label();
+            this.btnFloor2 = new System.Windows.Forms.Button();
+            this.btnFloor1 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+=======
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+>>>>>>> master
             this.label3 = new System.Windows.Forms.Label();
-            this.btnAddFood = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nudFood = new System.Windows.Forms.NumericUpDown();
             this.cbFood = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
+<<<<<<< HEAD
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFood)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bunifuElipse1
+=======
             this.panel3 = new System.Windows.Forms.Panel();
             this.lsvBill = new System.Windows.Forms.ListView();
             this.colum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -165,32 +207,202 @@
             0,
             0,
             0});
+>>>>>>> master
             // 
-            // cbFood
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this;
             // 
-            this.cbFood.FormattingEnabled = true;
-            this.cbFood.Location = new System.Drawing.Point(109, 51);
-            this.cbFood.Name = "cbFood";
-            this.cbFood.Size = new System.Drawing.Size(278, 28);
-            this.cbFood.TabIndex = 1;
+            // bunifuElipse2
             // 
-            // cbCategory
+            this.bunifuElipse2.ElipseRadius = 50;
+            this.bunifuElipse2.TargetControl = this;
             // 
+<<<<<<< HEAD
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(109, 7);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(278, 28);
             this.cbCategory.TabIndex = 0;
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
+=======
+            // bunifuGradientPanel1
+>>>>>>> master
             // 
-            // panel3
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.label8);
+            this.bunifuGradientPanel1.Controls.Add(this.comboBox2);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuTileButton3);
+            this.bunifuGradientPanel1.Controls.Add(this.label7);
+            this.bunifuGradientPanel1.Controls.Add(this.comboBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuTileButton2);
+            this.bunifuGradientPanel1.Controls.Add(this.label6);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.numericUpDown1);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuTileButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_money);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.lsvBill);
+            this.bunifuGradientPanel1.Controls.Add(this.panel1);
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox5);
+            this.bunifuGradientPanel1.Controls.Add(this.flpTable);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBack);
+            this.bunifuGradientPanel1.Controls.Add(this.panel2);
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.SandyBrown;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Tan;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.SystemColors.HotTrack;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-2, -1);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(899, 604);
+            this.bunifuGradientPanel1.TabIndex = 13;
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.Controls.Add(this.lsvBill);
-            this.panel3.Location = new System.Drawing.Point(602, 164);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(688, 563);
-            this.panel3.TabIndex = 3;
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(500, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 52);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Chuyển sang bàn số";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(500, 79);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(77, 21);
+            this.comboBox1.TabIndex = 24;
+            // 
+            // bunifuTileButton2
+            // 
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton2.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton2.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton2.Image = global::QuanLyBanHang.Properties.Resources.refresh;
+            this.bunifuTileButton2.ImagePosition = 0;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.LabelPosition = 20;
+            this.bunifuTileButton2.LabelText = "Chuyển";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(400, 19);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(92, 81);
+            this.bunifuTileButton2.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(666, 450);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 24);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "VNĐ";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(666, 422);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 20);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "%";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(508, 422);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(152, 20);
+            this.numericUpDown1.TabIndex = 20;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(402, 413);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 34);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Giảm giá";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton1.Image = global::QuanLyBanHang.Properties.Resources.exit;
+            this.bunifuTileButton1.ImagePosition = 0;
+            this.bunifuTileButton1.ImageZoom = 50;
+            this.bunifuTileButton1.LabelPosition = 36;
+            this.bunifuTileButton1.LabelText = "Thoát";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(780, 19);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(79, 81);
+            this.bunifuTileButton1.TabIndex = 18;
+            this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
+            // 
+            // txb_money
+            // 
+            this.txb_money.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_money.Location = new System.Drawing.Point(400, 450);
+            this.txb_money.Multiline = true;
+            this.txb_money.Name = "txb_money";
+            this.txb_money.Size = new System.Drawing.Size(260, 24);
+            this.txb_money.TabIndex = 17;
+            this.txb_money.Text = "0";
+            this.txb_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Thanh toán";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = null;
+            this.bunifuFlatButton1.Iconimage_right = global::QuanLyBanHang.Properties.Resources.coin;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = false;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(723, 413);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(136, 61);
+            this.bunifuFlatButton1.TabIndex = 14;
+            this.bunifuFlatButton1.Text = "Thanh toán";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // lsvBill
             // 
@@ -201,13 +413,15 @@
             this.columnHeader4,
             this.columnHeader5});
             this.lsvBill.HideSelection = false;
-            this.lsvBill.Location = new System.Drawing.Point(7, 18);
+            this.lsvBill.Location = new System.Drawing.Point(400, 173);
+            this.lsvBill.Margin = new System.Windows.Forms.Padding(2);
             this.lsvBill.Name = "lsvBill";
-            this.lsvBill.Size = new System.Drawing.Size(671, 536);
+            this.lsvBill.Size = new System.Drawing.Size(459, 235);
             this.lsvBill.TabIndex = 0;
             this.lsvBill.UseCompatibleStateImageBehavior = false;
             this.lsvBill.View = System.Windows.Forms.View.Details;
             // 
+<<<<<<< HEAD
             // colum1
             // 
             this.colum1.Text = "Tên món";
@@ -228,6 +442,11 @@
             this.columnHeader5.Text = "Thành tiền";
             this.columnHeader5.Width = 103;
             // 
+=======
+<<<<<<< HEAD
+            // colum1
+=======
+>>>>>>> master
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -341,32 +560,25 @@
             this.btnPay.Text = "Thanh toán";
             this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPay.UseVisualStyleBackColor = true;
+>>>>>>> master
             // 
-            // flpTable
+            this.colum1.Text = "Tên món";
+            this.colum1.Width = 110;
             // 
-            this.flpTable.AutoScroll = true;
-            this.flpTable.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flpTable.Location = new System.Drawing.Point(32, 164);
-            this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(510, 563);
-            this.flpTable.TabIndex = 4;
+            // columnHeader3
             // 
-            // btnBack
+            this.columnHeader3.Text = "Giá";
+            this.columnHeader3.Width = 86;
             // 
-            this.btnBack.AutoEllipsis = true;
-            this.btnBack.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBack.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnBack.Location = new System.Drawing.Point(32, 812);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(166, 88);
-            this.btnBack.TabIndex = 5;
-            this.btnBack.Text = "Quay về";
-            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Số lượng";
+            this.columnHeader4.Width = 98;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Thành tiền";
+            this.columnHeader5.Width = 103;
             // 
             // panel1
             // 
@@ -374,17 +586,19 @@
             this.panel1.Controls.Add(this.floor);
             this.panel1.Controls.Add(this.btnFloor2);
             this.panel1.Controls.Add(this.btnFloor1);
-            this.panel1.Location = new System.Drawing.Point(32, 44);
+            this.panel1.Location = new System.Drawing.Point(21, 29);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 91);
+            this.panel1.Size = new System.Drawing.Size(341, 59);
             this.panel1.TabIndex = 6;
             // 
             // floor
             // 
             this.floor.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.floor.Location = new System.Drawing.Point(11, 30);
+            this.floor.Location = new System.Drawing.Point(7, 19);
+            this.floor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.floor.Name = "floor";
-            this.floor.Size = new System.Drawing.Size(102, 36);
+            this.floor.Size = new System.Drawing.Size(68, 23);
             this.floor.TabIndex = 2;
             this.floor.Text = "Tầng ";
             // 
@@ -393,9 +607,10 @@
             this.btnFloor2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnFloor2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFloor2.Image = ((System.Drawing.Image)(resources.GetObject("btnFloor2.Image")));
-            this.btnFloor2.Location = new System.Drawing.Point(320, 7);
+            this.btnFloor2.Location = new System.Drawing.Point(213, 5);
+            this.btnFloor2.Margin = new System.Windows.Forms.Padding(2);
             this.btnFloor2.Name = "btnFloor2";
-            this.btnFloor2.Size = new System.Drawing.Size(117, 81);
+            this.btnFloor2.Size = new System.Drawing.Size(78, 53);
             this.btnFloor2.TabIndex = 1;
             this.btnFloor2.UseVisualStyleBackColor = false;
             // 
@@ -404,9 +619,10 @@
             this.btnFloor1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnFloor1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFloor1.Image = ((System.Drawing.Image)(resources.GetObject("btnFloor1.Image")));
-            this.btnFloor1.Location = new System.Drawing.Point(149, 7);
+            this.btnFloor1.Location = new System.Drawing.Point(99, 5);
+            this.btnFloor1.Margin = new System.Windows.Forms.Padding(2);
             this.btnFloor1.Name = "btnFloor1";
-            this.btnFloor1.Size = new System.Drawing.Size(117, 81);
+            this.btnFloor1.Size = new System.Drawing.Size(78, 53);
             this.btnFloor1.TabIndex = 0;
             this.btnFloor1.UseVisualStyleBackColor = false;
             this.btnFloor1.Click += new System.EventHandler(this.btnFloor1_Click);
@@ -416,59 +632,258 @@
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox5.Enabled = false;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(136, 835);
+            this.pictureBox5.Location = new System.Drawing.Point(91, 543);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox5.Size = new System.Drawing.Size(31, 30);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
             // 
-            // bunifuElipse1
+            // flpTable
             // 
-            this.bunifuElipse1.ElipseRadius = 10;
-            this.bunifuElipse1.TargetControl = this;
+            this.flpTable.AutoScroll = true;
+            this.flpTable.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flpTable.Location = new System.Drawing.Point(21, 107);
+            this.flpTable.Margin = new System.Windows.Forms.Padding(2);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(341, 367);
+            this.flpTable.TabIndex = 4;
             // 
-            // bunifuGradientPanel1
+            // btnBack
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.panel1);
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox5);
-            this.bunifuGradientPanel1.Controls.Add(this.flpTable);
-            this.bunifuGradientPanel1.Controls.Add(this.panel4);
-            this.bunifuGradientPanel1.Controls.Add(this.btnBack);
-            this.bunifuGradientPanel1.Controls.Add(this.panel3);
-            this.bunifuGradientPanel1.Controls.Add(this.panel2);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.SandyBrown;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Tan;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.SystemColors.HotTrack;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-3, -2);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1348, 929);
-            this.bunifuGradientPanel1.TabIndex = 13;
+            this.btnBack.AutoEllipsis = true;
+            this.btnBack.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnBack.Location = new System.Drawing.Point(21, 528);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(111, 57);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Quay về";
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // bunifuElipse2
+            // panel2
             // 
-            this.bunifuElipse2.ElipseRadius = 50;
-            this.bunifuElipse2.TargetControl = this;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.bunifuFlatButton2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.nudFood);
+            this.panel2.Controls.Add(this.cbFood);
+            this.panel2.Controls.Add(this.cbCategory);
+            this.panel2.Location = new System.Drawing.Point(400, 107);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(459, 62);
+            this.panel2.TabIndex = 2;
             // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "Thêm";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = null;
+            this.bunifuFlatButton2.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = false;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(331, 10);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(120, 44);
+            this.bunifuFlatButton2.TabIndex = 16;
+            this.bunifuFlatButton2.Text = "Thêm";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(268, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Số lượng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Tên món:";
+            // 
+<<<<<<< HEAD
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Loại:";
+            // 
+            // nudFood
+            // 
+<<<<<<< HEAD
+=======
+            this.nudFood.Location = new System.Drawing.Point(271, 34);
+            this.nudFood.Margin = new System.Windows.Forms.Padding(2);
+            this.nudFood.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.nudFood.Name = "nudFood";
+            this.nudFood.Size = new System.Drawing.Size(51, 20);
+            this.nudFood.TabIndex = 3;
+            this.nudFood.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // cbFood
+            // 
+            this.cbFood.FormattingEnabled = true;
+            this.cbFood.Location = new System.Drawing.Point(73, 33);
+            this.cbFood.Margin = new System.Windows.Forms.Padding(2);
+            this.cbFood.Name = "cbFood";
+            this.cbFood.Size = new System.Drawing.Size(187, 21);
+            this.cbFood.TabIndex = 1;
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(73, 5);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(2);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(187, 21);
+            this.cbCategory.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(685, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 52);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Gộp sang bàn số";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(685, 79);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(77, 21);
+            this.comboBox2.TabIndex = 27;
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = global::QuanLyBanHang.Properties.Resources.merge;
+            this.bunifuTileButton3.ImagePosition = 0;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 20;
+            this.bunifuTileButton3.LabelText = "Gộp";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(585, 19);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(92, 81);
+            this.bunifuTileButton3.TabIndex = 26;
+=======
+            // colum1
+            // 
+            this.colum1.Text = "Tên món";
+            this.colum1.Width = 110;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Giá";
+            this.columnHeader3.Width = 86;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Số lượng";
+            this.columnHeader4.Width = 98;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Thành tiền";
+            this.columnHeader5.Width = 103;
+            // 
+            // lbTotalPrice
+            // 
+            this.lbTotalPrice.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbTotalPrice.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalPrice.Location = new System.Drawing.Point(526, 36);
+            this.lbTotalPrice.Name = "lbTotalPrice";
+            this.lbTotalPrice.Size = new System.Drawing.Size(162, 82);
+            this.lbTotalPrice.TabIndex = 12;
+            this.lbTotalPrice.Text = "0";
+            this.lbTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+>>>>>>> master
+            // 
+>>>>>>> master
             // fTableManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1342, 918);
+            this.ClientSize = new System.Drawing.Size(895, 512);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lí quán Cafe";
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFood)).EndInit();
+<<<<<<< HEAD
+=======
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -478,32 +893,22 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
+>>>>>>> master
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnAddFood;
         private System.Windows.Forms.ComboBox cbFood;
         private System.Windows.Forms.ComboBox cbCategory;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ListView lsvBill;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.NumericUpDown nudFood;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
-        private System.Windows.Forms.Button btnDiscount;
-        private System.Windows.Forms.Button btnPay;
-        private System.Windows.Forms.NumericUpDown nmDiscount;
-        private System.Windows.Forms.ComboBox cbSwitchTable;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label floor;
         private System.Windows.Forms.Button btnFloor2;
@@ -512,11 +917,31 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.PictureBox pictureBox1;
+>>>>>>> master
         private System.Windows.Forms.ColumnHeader colum1;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+<<<<<<< HEAD
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private System.Windows.Forms.TextBox txb_money;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+=======
         private System.Windows.Forms.Label lbTotalPrice;
+>>>>>>> master
     }
 }
