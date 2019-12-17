@@ -62,21 +62,19 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Tan;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.SystemColors.ActiveCaption;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.SystemColors.HotTrack;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(2, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(3, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(421, 574);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(632, 883);
             this.bunifuGradientPanel1.TabIndex = 8;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(89, 413);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(134, 635);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 27);
+            this.pictureBox3.Size = new System.Drawing.Size(42, 42);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -85,10 +83,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(89, 361);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(134, 555);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(42, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -105,10 +102,10 @@
             this.txbLoginAccount.LineIdleColor = System.Drawing.SystemColors.InactiveCaption;
             this.txbLoginAccount.LineMouseHoverColor = System.Drawing.Color.AliceBlue;
             this.txbLoginAccount.LineThickness = 3;
-            this.txbLoginAccount.Location = new System.Drawing.Point(126, 361);
-            this.txbLoginAccount.Margin = new System.Windows.Forms.Padding(4);
+            this.txbLoginAccount.Location = new System.Drawing.Point(189, 555);
+            this.txbLoginAccount.Margin = new System.Windows.Forms.Padding(6);
             this.txbLoginAccount.Name = "txbLoginAccount";
-            this.txbLoginAccount.Size = new System.Drawing.Size(188, 28);
+            this.txbLoginAccount.Size = new System.Drawing.Size(282, 45);
             this.txbLoginAccount.TabIndex = 1;
             this.txbLoginAccount.Text = "thanhlenguyen";
             this.txbLoginAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -125,10 +122,10 @@
             this.txbLoginPassword.LineIdleColor = System.Drawing.SystemColors.InactiveCaption;
             this.txbLoginPassword.LineMouseHoverColor = System.Drawing.Color.AliceBlue;
             this.txbLoginPassword.LineThickness = 3;
-            this.txbLoginPassword.Location = new System.Drawing.Point(126, 413);
-            this.txbLoginPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txbLoginPassword.Location = new System.Drawing.Point(189, 635);
+            this.txbLoginPassword.Margin = new System.Windows.Forms.Padding(6);
             this.txbLoginPassword.Name = "txbLoginPassword";
-            this.txbLoginPassword.Size = new System.Drawing.Size(188, 27);
+            this.txbLoginPassword.Size = new System.Drawing.Size(282, 45);
             this.txbLoginPassword.TabIndex = 2;
             this.txbLoginPassword.Text = "1";
             this.txbLoginPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -137,10 +134,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(101, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(152, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(229, 314);
+            this.pictureBox1.Size = new System.Drawing.Size(344, 483);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -149,10 +145,9 @@
             // 
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogin.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(137, 472);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(206, 726);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(72, 23);
+            this.btnLogin.Size = new System.Drawing.Size(108, 35);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -162,10 +157,9 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(223, 472);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(334, 726);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(70, 23);
+            this.btnExit.Size = new System.Drawing.Size(105, 35);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -175,9 +169,8 @@
             // 
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(423, 574);
+            this.panel1.Size = new System.Drawing.Size(634, 883);
             this.panel1.TabIndex = 0;
             // 
             // bunifuElipse1
@@ -188,14 +181,13 @@
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(423, 512);
+            this.ClientSize = new System.Drawing.Size(634, 883);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";

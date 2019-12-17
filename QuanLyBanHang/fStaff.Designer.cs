@@ -35,6 +35,7 @@
             this.btnAccountInfo = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -45,7 +46,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Enabled = false;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(44, 90);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(343, 320);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -56,7 +57,7 @@
             // 
             this.btnManager.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnManager.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManager.Location = new System.Drawing.Point(-2, 0);
+            this.btnManager.Location = new System.Drawing.Point(30, 78);
             this.btnManager.Name = "btnManager";
             this.btnManager.Size = new System.Drawing.Size(368, 456);
             this.btnManager.TabIndex = 10;
@@ -69,9 +70,9 @@
             // 
             this.pictureBox2.Enabled = false;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(372, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(458, 90);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(321, 320);
+            this.pictureBox2.Size = new System.Drawing.Size(340, 320);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -81,9 +82,9 @@
             this.btnAccountInfo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnAccountInfo.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountInfo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAccountInfo.Location = new System.Drawing.Point(361, 0);
+            this.btnAccountInfo.Location = new System.Drawing.Point(447, 78);
             this.btnAccountInfo.Name = "btnAccountInfo";
-            this.btnAccountInfo.Size = new System.Drawing.Size(344, 456);
+            this.btnAccountInfo.Size = new System.Drawing.Size(363, 456);
             this.btnAccountInfo.TabIndex = 12;
             this.btnAccountInfo.Text = "Thông tin tài khoản";
             this.btnAccountInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -94,7 +95,7 @@
             // 
             this.pictureBox4.Enabled = false;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(711, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(869, 91);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(321, 320);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,7 +107,7 @@
             this.btnLogOut.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnLogOut.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogOut.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(699, 0);
+            this.btnLogOut.Location = new System.Drawing.Point(857, 79);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(346, 457);
             this.btnLogOut.TabIndex = 14;
@@ -115,20 +116,36 @@
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.SandyBrown;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Tan;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.SystemColors.HotTrack;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-3, -1);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1248, 616);
+            this.bunifuGradientPanel1.TabIndex = 16;
+            // 
             // fStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1045, 458);
+            this.ClientSize = new System.Drawing.Size(1241, 612);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnAccountInfo);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnManager);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fStaff";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fStaff";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -145,5 +162,6 @@
         private System.Windows.Forms.Button btnAccountInfo;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnLogOut;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }
