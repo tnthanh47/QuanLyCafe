@@ -58,7 +58,8 @@ namespace QuanLyBanHang
                 lsvBill.Items.Add(lsvItems);
             }
             CultureInfo culture = new CultureInfo("vi-VN");
-            txb_money.Text = totalPrice.ToString("c",culture);
+            //txb_money.Text = totalPrice.ToString("c",culture);
+            var i = lsvBill.Tag;
         }
         void LoadCategory()
         {
@@ -78,7 +79,9 @@ namespace QuanLyBanHang
         private void Btn_Click(object sender, EventArgs e)
         {
             int tableID = ((sender as Button).Tag as Table).ID;
+            lsvBill.Tag = (sender as Button).Tag;
             ShowBill(tableID);
+
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -89,15 +92,10 @@ namespace QuanLyBanHang
             flpTable.Show();
         }
 
-
-        #endregion
-
-
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void cbCategory_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             int id = 0;
@@ -108,6 +106,24 @@ namespace QuanLyBanHang
             id = selected.Id;
             LoadFoodByCategory(id);
         }
+        private void btnAddFood_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table;
+            int idBill = BillDAO.Instance.GetUncheckedBillByTableID(table.ID);
+            int idFood = (cbFood.SelectedItem as Food).Id;
+            int count = (int)nudFood.Value;
+            if (idBill == -1)
+            {
+                BillDAO.Instance.InsertBill(table.ID);
+                BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxIdBill(), idFood, count);
+            }
+            else
+            {
+                BillInfoDAO.Instance.InsertBillInfo(idBill, idFood, count);
+            }
+            lsvBill.Refresh();
+        }
+        #endregion
+
     }
-    // test git
 }

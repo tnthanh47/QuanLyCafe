@@ -29,5 +29,10 @@ namespace QuanLyBanHang.DAO
             }
             return listBillinfo;
         }
+        public void InsertBillInfo(int idBill, int idFood, int count)
+        {
+
+            DataProvider.Instance.ExecuteNonQuery("USP_INSERTBILLINFO @IDBILL , @IDFOOD , @COUNT ", new object[] { idBill, idFood, count });
+        }
     }
 }

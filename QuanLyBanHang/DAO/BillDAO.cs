@@ -28,5 +28,20 @@ namespace QuanLyBanHang.DAO
             }
             return -1;   // trả về -1 nếu không thành công
         }
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExecuteNonQuery("EXEC USP_INSERTBILL @IDTABLE", new object[] { id });
+        }
+        public int GetMaxIdBill()
+        {
+            try
+            {
+                return (int)DataProvider.Instance.ExecuteScalar("SELECT MAX(ID) FROM BILL");
+            }
+            catch
+            {
+                return 1;
+            }
+        }
     }
 }
