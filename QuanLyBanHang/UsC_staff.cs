@@ -1,9 +1,8 @@
-﻿using QuanLyBanHang.DAO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyBanHang
 {
-    public partial class fAdmin : Form
+    public partial class UsC_Staff : UserControl
     {
-        public fAdmin()
+        public UsC_Staff()
         {
             InitializeComponent();
         }

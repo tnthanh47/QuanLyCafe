@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE/SURBVChTDcrrbtMwAIDRvi4IoXEZjGmDjUvbpW16b9rY
+        uTiO4zhxssE0hJh4to+c32f0YuF5OW94NbO8DgxngebNneLdNON8IvkwjrkYHxmdrT1vVw3vl5bz0PAx
+        1HxaKC7nGVczyecg5iYY4sXec7lruNrWXG8qvmw0t2vF11XG92XCOBRMwyHeHDtuo5ZvUc2PQ8VkXzLd
+        FQTbnPk2YbERLNcnRhPZcSdaZqJmHleEp5LVsWAd5WyjhP1BEO2HuMw7VlnLJqvZpRWHpCSSBSeRI0SC
+        jAXpaYhR2XHULbF2yMKSqpIsL1BZjs5SylRSJUNM657cegrr0JXFGIMtNbVWNDrFF5JexYwq32Nbj2sc
+        rbN0ztDXmger+FWlPBrJkxli/9Bzf+/52TseO8tTZ/jtNX9axd8m5dlJ/rmY/9fTGRwUWDFUAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
 </root>

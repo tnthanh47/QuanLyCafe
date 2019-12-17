@@ -86,6 +86,12 @@
     <Compile Include="DAO\FoodDAO.cs" />
     <Compile Include="DAO\MenuDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
+    <Compile Include="UsC_Drink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsC_Drink.Designer.cs">
+      <DependentUpon>UsC_Drink.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\BillInfo.cs" />
     <Compile Include="DTO\Category.cs" />
@@ -97,12 +103,6 @@
     </Compile>
     <Compile Include="fAcountProfile.Designer.cs">
       <DependentUpon>fAcountProfile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fAdmin.Designer.cs">
-      <DependentUpon>fAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
@@ -130,14 +130,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsC_Food.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsC_Food.Designer.cs">
+      <DependentUpon>UsC_Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsC_Revuene.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsC_Revuene.Designer.cs">
+      <DependentUpon>UsC_Revuene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsC_Staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsC_Staff.Designer.cs">
+      <DependentUpon>UsC_Staff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fAcountProfile.resx">
       <DependentUpon>fAcountProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fAdmin.resx">
-      <DependentUpon>fAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
@@ -161,6 +176,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UsC_Drink.resx">
+      <DependentUpon>UsC_Drink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsC_Food.resx">
+      <DependentUpon>UsC_Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsC_Revuene.resx">
+      <DependentUpon>UsC_Revuene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsC_staff.resx">
+      <DependentUpon>UsC_Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -189,6 +216,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relationship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocktails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
