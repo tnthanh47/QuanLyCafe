@@ -43,5 +43,16 @@ namespace QuanLyBanHang.DAO
                 return 1;
             }
         }
+
+        public void CheckOut(int id)
+        {
+            string query = "UPDATE BILL SET STATUS = 1 WHERE ID =" + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
+        public void DeleteBillByTableID(int id)
+        {
+            string query = "DELETE FROM BILL WHERE IDTABLE = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

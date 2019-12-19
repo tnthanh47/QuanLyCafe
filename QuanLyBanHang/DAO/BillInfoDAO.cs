@@ -34,5 +34,10 @@ namespace QuanLyBanHang.DAO
 
             DataProvider.Instance.ExecuteNonQuery("USP_INSERTBILLINFO @IDBILL , @IDFOOD , @COUNT ", new object[] { idBill, idFood, count });
         }
+        public void DeleteBillInfoByBillId(int id)
+        {
+            string query = "DELETE FROM BILLINFO WHERE IDBILL = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

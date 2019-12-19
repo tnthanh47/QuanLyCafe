@@ -23,8 +23,8 @@ namespace QuanLyBanHang
         #region Method
         void LoadTable()  // hàm để hiển thị các bàn
         {
+            flpTable.Controls.Clear();
             List<Table> tableList = TableDAO.Instance.LoadTableList();
-
             foreach (Table item in tableList)
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
@@ -43,7 +43,7 @@ namespace QuanLyBanHang
                
             }
         }
-        void ShowBill(int id)   // hàm show bill khi click vào bàn
+        public void ShowBill(int id)   // hàm show bill khi click vào bàn
         {
             lsvBill.Items.Clear();
             float totalPrice = 0;
@@ -58,8 +58,25 @@ namespace QuanLyBanHang
                 lsvBill.Items.Add(lsvItems);
             }
             CultureInfo culture = new CultureInfo("vi-VN");
-            //txb_money.Text = totalPrice.ToString("c",culture);
-            var i = lsvBill.Tag;
+            txb_money.Text = totalPrice.ToString("c",culture);
+            /*
+             * void ShowBill(int id)
+        {
+            lsvBill.Items.Clear();
+            List<QuanLyQuanCafe.DTO.Menu> listBillInfo = MenuDAO.Instance.GetListMenuByTable(id);
+            float totalPrice = 0;
+            foreach (QuanLyQuanCafe.DTO.Menu item in listBillInfo)
+            {
+                ListViewItem lsvItem = new ListViewItem(item.FoodName.ToString());
+                lsvItem.SubItems.Add(item.Count.ToString());
+                lsvItem.SubItems.Add(item.Price.ToString());
+                lsvItem.SubItems.Add(item.TotalPrice.ToString());
+                totalPrice += item.TotalPrice;
+                lsvBill.Items.Add(lsvItem);
+            }
+            CultureInfo culture = new CultureInfo("vi-VN");
+
+             */
         }
         void LoadCategory()
         {
@@ -121,9 +138,35 @@ namespace QuanLyBanHang
             {
                 BillInfoDAO.Instance.InsertBillInfo(idBill, idFood, count);
             }
-            lsvBill.Refresh();
+          
+            ShowBill(table.ID);
         }
+
+        private void btn_pay_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table;
+            int idBill = BillDAO.Instance.GetUncheckedBillByTableID(table.ID);
+            if (idBill != -1)
+            {
+                if (MessageBox.Show("Bạn muốn THANH TOÁN cho bàn " + table.Name, "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BillDAO.Instance.CheckOut(idBill);
+                    BillInfoDAO.Instance.DeleteBillInfoByBillId(idBill);
+                    BillDAO.Instance.DeleteBillByTableID(table.ID);
+                    ShowBill(table.ID);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bàn không có hóa đơn", "Thông báo", MessageBoxButtons.OK);
+            }
+        }
+
         #endregion
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
