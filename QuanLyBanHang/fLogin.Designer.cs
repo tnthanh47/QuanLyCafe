@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,6 +41,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.animation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,6 +60,7 @@
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
             this.bunifuGradientPanel1.Controls.Add(this.btnLogin);
             this.bunifuGradientPanel1.Controls.Add(this.btnExit);
+            this.animation.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.SandyBrown;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Tan;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.SystemColors.ActiveCaption;
@@ -71,6 +74,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.animation.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(134, 635);
             this.pictureBox3.Name = "pictureBox3";
@@ -82,6 +86,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.animation.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(134, 555);
             this.pictureBox2.Name = "pictureBox2";
@@ -93,6 +98,7 @@
             // txbLoginAccount
             // 
             this.txbLoginAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.animation.SetDecoration(this.txbLoginAccount, BunifuAnimatorNS.DecorationType.None);
             this.txbLoginAccount.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbLoginAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbLoginAccount.HintForeColor = System.Drawing.Color.Empty;
@@ -113,6 +119,7 @@
             // txbLoginPassword
             // 
             this.txbLoginPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.animation.SetDecoration(this.txbLoginPassword, BunifuAnimatorNS.DecorationType.None);
             this.txbLoginPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbLoginPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbLoginPassword.HintForeColor = System.Drawing.Color.Empty;
@@ -133,6 +140,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.animation.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(152, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -143,6 +151,7 @@
             // 
             // btnLogin
             // 
+            this.animation.SetDecoration(this.btnLogin, BunifuAnimatorNS.DecorationType.None);
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogin.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(206, 726);
@@ -155,6 +164,7 @@
             // 
             // btnExit
             // 
+            this.animation.SetDecoration(this.btnExit, BunifuAnimatorNS.DecorationType.None);
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(334, 726);
@@ -168,6 +178,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
+            this.animation.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(634, 883);
@@ -178,6 +189,28 @@
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // animation
+            // 
+            this.animation.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.animation.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.animation.DefaultAnimation = animation1;
+            this.animation.Interval = 100;
+            // 
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -187,6 +220,7 @@
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(634, 883);
             this.Controls.Add(this.panel1);
+            this.animation.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -212,6 +246,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txbLoginAccount;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txbLoginPassword;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private BunifuAnimatorNS.BunifuTransition animation;
     }
 }
 

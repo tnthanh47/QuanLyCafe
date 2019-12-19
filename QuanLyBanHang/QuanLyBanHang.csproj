@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\New folder\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="LinqToTwitter.AspNet, Version=5.0.0.14073, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\linqtotwitter.5.0.0\lib\net461\LinqToTwitter.AspNet.dll</HintPath>
@@ -231,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\New folder\Bunifu_UI_v1.5.3.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

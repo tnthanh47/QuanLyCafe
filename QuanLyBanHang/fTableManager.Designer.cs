@@ -62,7 +62,6 @@
             this.cbFood = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.btnAddFood = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_add = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -139,42 +138,23 @@
             this.comboBox2.Size = new System.Drawing.Size(114, 28);
             this.comboBox2.TabIndex = 27;
             // 
-
-            // bunifuTileButton3
-            // 
-            this.bunifuTileButton3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuTileButton3.color = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuTileButton3.colorActive = System.Drawing.SystemColors.Highlight;
-            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton3.Image = global::QuanLyBanHang.Properties.Resources.merge;
-            this.bunifuTileButton3.ImagePosition = 0;
-            this.bunifuTileButton3.ImageZoom = 40;
-            this.bunifuTileButton3.LabelPosition = 14;
-            this.bunifuTileButton3.LabelText = "Gộp";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(876, 45);
-            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(8);
-            this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(138, 90);
-            this.bunifuTileButton3.TabIndex = 26;
             // btn_merge
             // 
-            this.btn_merge.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_merge.color = System.Drawing.Color.SeaGreen;
-            this.btn_merge.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_merge.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_merge.color = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_merge.colorActive = System.Drawing.SystemColors.Highlight;
             this.btn_merge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_merge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_merge.ForeColor = System.Drawing.Color.White;
             this.btn_merge.Image = global::QuanLyBanHang.Properties.Resources.merge;
             this.btn_merge.ImagePosition = 0;
-            this.btn_merge.ImageZoom = 50;
+            this.btn_merge.ImageZoom = 40;
             this.btn_merge.LabelPosition = 20;
             this.btn_merge.LabelText = "Gộp";
-            this.btn_merge.Location = new System.Drawing.Point(585, 19);
-            this.btn_merge.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_merge.Location = new System.Drawing.Point(897, 45);
+            this.btn_merge.Margin = new System.Windows.Forms.Padding(5);
             this.btn_merge.Name = "btn_merge";
-            this.btn_merge.Size = new System.Drawing.Size(92, 81);
+            this.btn_merge.Size = new System.Drawing.Size(122, 91);
             this.btn_merge.TabIndex = 26;
             // 
             // label7
@@ -198,44 +178,24 @@
             this.comboBox1.Size = new System.Drawing.Size(114, 28);
             this.comboBox1.TabIndex = 24;
             // 
-            // bunifuTileButton2
-            // 
-            this.bunifuTileButton2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuTileButton2.color = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuTileButton2.colorActive = System.Drawing.SystemColors.Highlight;
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton2.Image = global::QuanLyBanHang.Properties.Resources.refresh;
-            this.bunifuTileButton2.ImagePosition = 0;
-            this.bunifuTileButton2.ImageZoom = 40;
-            this.bunifuTileButton2.LabelPosition = 16;
-            this.bunifuTileButton2.LabelText = "Chuyển";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(600, 45);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(8);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(138, 90);
-            this.bunifuTileButton2.TabIndex = 23;
-
             // btn_move
             // 
-            this.btn_move.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_move.color = System.Drawing.Color.SeaGreen;
-            this.btn_move.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_move.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_move.color = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_move.colorActive = System.Drawing.SystemColors.Highlight;
             this.btn_move.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_move.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_move.ForeColor = System.Drawing.Color.White;
             this.btn_move.Image = global::QuanLyBanHang.Properties.Resources.refresh;
             this.btn_move.ImagePosition = 0;
-            this.btn_move.ImageZoom = 50;
+            this.btn_move.ImageZoom = 40;
             this.btn_move.LabelPosition = 20;
             this.btn_move.LabelText = "Chuyển";
-            this.btn_move.Location = new System.Drawing.Point(400, 19);
-            this.btn_move.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_move.Location = new System.Drawing.Point(600, 45);
+            this.btn_move.Margin = new System.Windows.Forms.Padding(5);
             this.btn_move.Name = "btn_move";
-            this.btn_move.Size = new System.Drawing.Size(92, 81);
+            this.btn_move.Size = new System.Drawing.Size(121, 91);
             this.btn_move.TabIndex = 23;
-
             // 
             // label6
             // 
@@ -314,46 +274,10 @@
             this.txb_money.Text = "0";
             this.txb_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.SystemColors.Highlight;
-            this.bunifuFlatButton1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Thanh toán";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = global::QuanLyBanHang.Properties.Resources.coin;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = false;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(1085, 635);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(203, 94);
-            this.bunifuFlatButton1.TabIndex = 14;
-            this.bunifuFlatButton1.Text = "Thanh toán";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // btn_pay
             // 
-            this.btn_pay.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btn_pay.Activecolor = System.Drawing.SystemColors.Highlight;
+            this.btn_pay.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_pay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_pay.BorderRadius = 0;
             this.btn_pay.ButtonText = "Thanh toán";
@@ -369,20 +293,22 @@
             this.btn_pay.IconRightVisible = true;
             this.btn_pay.IconRightZoom = 0D;
             this.btn_pay.IconVisible = false;
-            this.btn_pay.IconZoom = 90D;
+            this.btn_pay.IconZoom = 80D;
             this.btn_pay.IsTab = false;
-            this.btn_pay.Location = new System.Drawing.Point(723, 413);
+            this.btn_pay.Location = new System.Drawing.Point(1085, 649);
+            this.btn_pay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_pay.Name = "btn_pay";
-            this.btn_pay.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_pay.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btn_pay.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_pay.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_pay.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_pay.selected = false;
-            this.btn_pay.Size = new System.Drawing.Size(136, 61);
+            this.btn_pay.Size = new System.Drawing.Size(203, 78);
             this.btn_pay.TabIndex = 14;
             this.btn_pay.Text = "Thanh toán";
             this.btn_pay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_pay.Textcolor = System.Drawing.Color.White;
             this.btn_pay.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pay.Click += new System.EventHandler(this.btn_pay_Click);
             // 
             // lsvBill
             // 
@@ -442,8 +368,9 @@
             // 
             // btnFloor2
             // 
-            this.btnFloor2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnFloor2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnFloor2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFloor2.Image = ((System.Drawing.Image)(resources.GetObject("btnFloor2.Image")));
             this.btnFloor2.Location = new System.Drawing.Point(320, 8);
             this.btnFloor2.Name = "btnFloor2";
             this.btnFloor2.Size = new System.Drawing.Size(117, 82);
@@ -452,8 +379,9 @@
             // 
             // btnFloor1
             // 
-            this.btnFloor1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnFloor1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnFloor1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFloor1.Image = ((System.Drawing.Image)(resources.GetObject("btnFloor1.Image")));
             this.btnFloor1.Location = new System.Drawing.Point(148, 8);
             this.btnFloor1.Name = "btnFloor1";
             this.btnFloor1.Size = new System.Drawing.Size(117, 82);
@@ -504,7 +432,6 @@
             this.panel2.Controls.Add(this.cbFood);
             this.panel2.Controls.Add(this.cbCategory);
             this.panel2.Controls.Add(this.btnAddFood);
-            this.panel2.Controls.Add(this.btn_add);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
@@ -517,28 +444,25 @@
             // cbFood
             // 
             this.cbFood.FormattingEnabled = true;
-            this.cbFood.Location = new System.Drawing.Point(116, 54);
+            this.cbFood.Location = new System.Drawing.Point(110, 51);
             this.cbFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbFood.Name = "cbFood";
-            this.cbFood.Size = new System.Drawing.Size(272, 28);
-            this.cbFood.Location = new System.Drawing.Point(77, 35);
-            this.cbFood.Name = "cbFood";
-            this.cbFood.Size = new System.Drawing.Size(183, 21);
+            this.cbFood.Size = new System.Drawing.Size(249, 28);
             this.cbFood.TabIndex = 19;
             // 
             // cbCategory
             // 
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(116, 5);
+            this.cbCategory.Location = new System.Drawing.Point(110, 5);
             this.cbCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(272, 28);
+            this.cbCategory.Size = new System.Drawing.Size(249, 28);
             this.cbCategory.TabIndex = 18;
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged_1);
             // 
             // btnAddFood
             // 
-            this.btnAddFood.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAddFood.Activecolor = System.Drawing.SystemColors.HotTrack;
             this.btnAddFood.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddFood.BorderRadius = 0;
@@ -571,51 +495,12 @@
             this.btnAddFood.Textcolor = System.Drawing.Color.White;
             this.btnAddFood.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
-            this.cbCategory.Location = new System.Drawing.Point(77, 3);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(183, 21);
-            this.cbCategory.TabIndex = 18;
-            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged_1);
-            // 
-            // btn_add
-            // 
-            this.btn_add.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add.BorderRadius = 0;
-            this.btn_add.ButtonText = "Thêm";
-            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_add.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_add.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_add.Iconimage = null;
-            this.btn_add.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
-            this.btn_add.Iconimage_right_Selected = null;
-            this.btn_add.Iconimage_Selected = null;
-            this.btn_add.IconMarginLeft = 0;
-            this.btn_add.IconMarginRight = 0;
-            this.btn_add.IconRightVisible = true;
-            this.btn_add.IconRightZoom = 0D;
-            this.btn_add.IconVisible = false;
-            this.btn_add.IconZoom = 90D;
-            this.btn_add.IsTab = false;
-            this.btn_add.Location = new System.Drawing.Point(331, 10);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_add.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btn_add.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_add.selected = false;
-            this.btn_add.Size = new System.Drawing.Size(120, 44);
-            this.btn_add.TabIndex = 16;
-            this.btn_add.Text = "Thêm";
-            this.btn_add.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_add.Textcolor = System.Drawing.Color.White;
-            this.btn_add.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(402, 15);
+            this.label3.Location = new System.Drawing.Point(387, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 21);
             this.label3.TabIndex = 6;
@@ -643,8 +528,13 @@
             // 
             // nudFood
             // 
-            this.nudFood.Location = new System.Drawing.Point(404, 49);
+            this.nudFood.Location = new System.Drawing.Point(389, 51);
             this.nudFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nudFood.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            -2147483648});
             this.nudFood.Name = "nudFood";
             this.nudFood.Size = new System.Drawing.Size(86, 26);
             this.nudFood.TabIndex = 17;
@@ -695,7 +585,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddFood;
         private Bunifu.Framework.UI.BunifuFlatButton btn_pay;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_add;
         private System.Windows.Forms.TextBox txb_money;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;

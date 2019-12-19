@@ -34,8 +34,12 @@ namespace QuanLyBanHang.DAO
                 Table table = new Table(item);
                 tableList.Add(table);
             }
-
             return tableList;
+        }
+        public void ChangeTableStatus(int id)
+        {
+            string query = "UPDATE TABLEFOOD SET STATUS = N'Có người' WHERE ID = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
         }
     }
 }
