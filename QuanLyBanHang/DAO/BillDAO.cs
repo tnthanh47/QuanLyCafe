@@ -12,13 +12,13 @@ namespace QuanLyBanHang.DAO
     {
         private static BillDAO instance;
 
-        public static BillDAO Instance 
+        public static BillDAO Instance
         {
-            get { if (instance == null) instance = new BillDAO(); return BillDAO.instance; } 
-            private set { BillDAO.instance = value; }  
+            get { if (instance == null) instance = new BillDAO(); return BillDAO.instance; }
+            private set { BillDAO.instance = value; }
         }
         private BillDAO() { }
-        public int GetUncheckedBillByTableID(int id)
+        public int GetUncheckedBillByTableID(int id)  
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM BILL WHERE IDTABLE =" + id + "AND STATUS = 0");
             if (data.Rows.Count > 0)
@@ -44,15 +44,28 @@ namespace QuanLyBanHang.DAO
             }
         }
 
-        public void CheckOut(int id)
+        public void CheckOut(int id,int discount,float totalPrice)
         {
-            string query = "UPDATE BILL SET STATUS = 1 WHERE ID =" + id;
+            string query = "UPDATE BILL SET DATECHECKOUT = GETDATE(), STATUS = 1 ,"+ " DISCOUNT = " + discount + ", TOTALPRICE = " + totalPrice + " WHERE ID =" + id;
             DataProvider.Instance.ExecuteNonQuery(query);
         }
         public void DeleteBillByTableID(int id)
         {
             string query = "DELETE FROM BILL WHERE IDTABLE = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
+        }
+        public DataTable GetListBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+            return DataProvider.Instance.ExecuteQuery("EXEC USP_GetListBillByDate @CHECKIN , @CHECKOUT", new object[]{checkIn,checkOut});
+        }
+
+        public int GetNumBillListByDate(DateTime checkIn, DateTime checkOut)
+        {
+            return (int)DataProvider.Instance.ExecuteScalar("exec USP_GetNumBillByDate @checkIn , @checkOut", new object[] { checkIn, checkOut });
+        }
+        public DataTable GetBillListByDateAndPage(DateTime checkIn, DateTime checkOut, int pageNum)
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_GetListBillByDateAndPage @checkIn , @checkOut , @page", new object[] { checkIn, checkOut, pageNum });
         }
     }
 }

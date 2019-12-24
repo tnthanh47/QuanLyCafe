@@ -39,5 +39,10 @@ namespace QuanLyBanHang.DAO
             string query = "DELETE FROM BILLINFO WHERE IDBILL = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
         }
+        public void DeleteBillInfoByFoodId(int id)
+        {
+            string query = "DELETE FROM BILLINFO WHERE IDFOOD = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

@@ -29,17 +29,54 @@ namespace QuanLyBanHang.DAO
 
             DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetTableList");
 
+                foreach (DataRow item in data.Rows)
+                {
+                    Table table = new Table(item);
+                    tableList.Add(table);
+                }
+            return tableList;
+        }
+        public List<Table> LoadTableListforFloor1() // thêm bàn theo từng tầng
+        {
+            List<Table> tableList = new List<Table>();
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetTableList");
+
             foreach (DataRow item in data.Rows)
             {
                 Table table = new Table(item);
-                tableList.Add(table);
+                if (table.ID <= 10)
+                {
+                    tableList.Add(table);
+                }
             }
             return tableList;
         }
+        public List<Table> LoadTableListforFloor2() // thêm bàn theo từng tầng
+        {
+            List<Table> tableList = new List<Table>();
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetTableList");
+
+            foreach (DataRow item in data.Rows)
+            {
+                Table table = new Table(item);
+                if (table.ID > 10)
+                {
+                    tableList.Add(table);
+                }
+            }
+            return tableList;
+        }
+
         public void ChangeTableStatus(int id)
         {
             string query = "UPDATE TABLEFOOD SET STATUS = N'Có người' WHERE ID = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
+        }
+        public void SwitchTable(int id1, int id2)
+        {
+            DataProvider.Instance.ExecuteQuery("USP_SwitchTable @IDTABLE1 , @IDTABLE2 ", new object[] { id1, id2 });
         }
     }
 }

@@ -30,169 +30,199 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsC_Staff));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txb_Type = new System.Windows.Forms.TextBox();
+            this.btn_DeleteAccount = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_ViewAccount = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txb_Username = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txb_Displayname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton1);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox3);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_Type);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_DeleteAccount);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_ViewAccount);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox4);
-            this.bunifuGradientPanel1.Controls.Add(this.label4);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox2);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_Username);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_Displayname);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
-            this.bunifuGradientPanel1.Controls.Add(this.dataGridView1);
+            this.bunifuGradientPanel1.Controls.Add(this.dtgvAccount);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.SystemColors.HotTrack;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.SystemColors.ActiveCaption;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Tan;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.SandyBrown;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(688, 416);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1032, 640);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
-            // bunifuFlatButton1
+            // txb_Type
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Xem";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = global::QuanLyBanHang.Properties.Resources.show;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = false;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(594, 108);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(91, 41);
-            this.bunifuFlatButton1.TabIndex = 14;
-            this.bunifuFlatButton1.Text = "Xem";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Type.Location = new System.Drawing.Point(787, 188);
+            this.txb_Type.Name = "txb_Type";
+            this.txb_Type.Size = new System.Drawing.Size(241, 26);
+            this.txb_Type.TabIndex = 16;
             // 
-            // textBox3
+            // btn_DeleteAccount
             // 
-            this.textBox3.Location = new System.Drawing.Point(449, 77);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 13;
+            this.btn_DeleteAccount.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_DeleteAccount.BackColor = System.Drawing.Color.Transparent;
+            this.btn_DeleteAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_DeleteAccount.BorderRadius = 0;
+            this.btn_DeleteAccount.ButtonText = "Xóa tài khoản";
+            this.btn_DeleteAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DeleteAccount.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_DeleteAccount.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_DeleteAccount.Iconimage = null;
+            this.btn_DeleteAccount.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btn_DeleteAccount.Iconimage_right")));
+            this.btn_DeleteAccount.Iconimage_right_Selected = null;
+            this.btn_DeleteAccount.Iconimage_Selected = null;
+            this.btn_DeleteAccount.IconMarginLeft = 0;
+            this.btn_DeleteAccount.IconMarginRight = 0;
+            this.btn_DeleteAccount.IconRightVisible = true;
+            this.btn_DeleteAccount.IconRightZoom = 0D;
+            this.btn_DeleteAccount.IconVisible = false;
+            this.btn_DeleteAccount.IconZoom = 90D;
+            this.btn_DeleteAccount.IsTab = false;
+            this.btn_DeleteAccount.Location = new System.Drawing.Point(661, 543);
+            this.btn_DeleteAccount.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btn_DeleteAccount.Name = "btn_DeleteAccount";
+            this.btn_DeleteAccount.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_DeleteAccount.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_DeleteAccount.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_DeleteAccount.selected = false;
+            this.btn_DeleteAccount.Size = new System.Drawing.Size(207, 74);
+            this.btn_DeleteAccount.TabIndex = 15;
+            this.btn_DeleteAccount.Text = "Xóa tài khoản";
+            this.btn_DeleteAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_DeleteAccount.Textcolor = System.Drawing.Color.White;
+            this.btn_DeleteAccount.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DeleteAccount.Click += new System.EventHandler(this.btn_DeleteAccount_Click);
+            // 
+            // btn_ViewAccount
+            // 
+            this.btn_ViewAccount.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_ViewAccount.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ViewAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ViewAccount.BorderRadius = 0;
+            this.btn_ViewAccount.ButtonText = "Xem";
+            this.btn_ViewAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ViewAccount.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_ViewAccount.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_ViewAccount.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_ViewAccount.Iconimage")));
+            this.btn_ViewAccount.Iconimage_right = global::QuanLyBanHang.Properties.Resources.show;
+            this.btn_ViewAccount.Iconimage_right_Selected = null;
+            this.btn_ViewAccount.Iconimage_Selected = null;
+            this.btn_ViewAccount.IconMarginLeft = 0;
+            this.btn_ViewAccount.IconMarginRight = 0;
+            this.btn_ViewAccount.IconRightVisible = true;
+            this.btn_ViewAccount.IconRightZoom = 0D;
+            this.btn_ViewAccount.IconVisible = false;
+            this.btn_ViewAccount.IconZoom = 90D;
+            this.btn_ViewAccount.IsTab = false;
+            this.btn_ViewAccount.Location = new System.Drawing.Point(661, 448);
+            this.btn_ViewAccount.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btn_ViewAccount.Name = "btn_ViewAccount";
+            this.btn_ViewAccount.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_ViewAccount.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_ViewAccount.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_ViewAccount.selected = false;
+            this.btn_ViewAccount.Size = new System.Drawing.Size(136, 63);
+            this.btn_ViewAccount.TabIndex = 14;
+            this.btn_ViewAccount.Text = "Xem";
+            this.btn_ViewAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ViewAccount.Textcolor = System.Drawing.Color.White;
+            this.btn_ViewAccount.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ViewAccount.Click += new System.EventHandler(this.btn_ViewAccount_Click);
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(343, 75);
+            this.label3.Location = new System.Drawing.Point(645, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.Size = new System.Drawing.Size(150, 35);
             this.label3.TabIndex = 12;
             this.label3.Text = "Loại";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // txb_Username
             // 
-            this.textBox4.Location = new System.Drawing.Point(449, 27);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 20);
-            this.textBox4.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(343, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Mật khẩu";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(109, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 9;
+            this.txb_Username.Location = new System.Drawing.Point(787, 72);
+            this.txb_Username.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_Username.Name = "txb_Username";
+            this.txb_Username.ReadOnly = true;
+            this.txb_Username.Size = new System.Drawing.Size(241, 26);
+            this.txb_Username.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 73);
+            this.label2.Location = new System.Drawing.Point(645, 69);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(150, 35);
             this.label2.TabIndex = 8;
             this.label2.Text = "Tên tài khoản";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txb_Displayname
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 7;
+            this.txb_Displayname.Location = new System.Drawing.Point(787, 130);
+            this.txb_Displayname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_Displayname.Name = "txb_Displayname";
+            this.txb_Displayname.Size = new System.Drawing.Size(241, 26);
+            this.txb_Displayname.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 23);
+            this.label1.Location = new System.Drawing.Point(645, 126);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(150, 35);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tên hiển thị";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dtgvAccount
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 155);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(682, 258);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvAccount.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvAccount.Location = new System.Drawing.Point(4, 5);
+            this.dtgvAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgvAccount.Name = "dtgvAccount";
+            this.dtgvAccount.ReadOnly = true;
+            this.dtgvAccount.RowHeadersWidth = 62;
+            this.dtgvAccount.Size = new System.Drawing.Size(633, 630);
+            this.dtgvAccount.TabIndex = 0;
             // 
             // UsC_Staff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UsC_Staff";
-            this.Size = new System.Drawing.Size(688, 416);
+            this.Size = new System.Drawing.Size(1032, 640);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,15 +230,14 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DataGridView dtgvAccount;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txb_Username;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txb_Displayname;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_ViewAccount;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_DeleteAccount;
+        private System.Windows.Forms.TextBox txb_Type;
     }
 }

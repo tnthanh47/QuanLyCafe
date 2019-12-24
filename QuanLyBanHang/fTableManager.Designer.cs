@@ -33,19 +33,16 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btn_merge = new Bunifu.Framework.UI.BunifuTileButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btn_move = new Bunifu.Framework.UI.BunifuTileButton();
+            this.cb_Table1 = new System.Windows.Forms.ComboBox();
+            this.Btn_Switch = new Bunifu.Framework.UI.BunifuTileButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudDiscount = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.txb_money = new System.Windows.Forms.TextBox();
-            this.btn_pay = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Exit = new Bunifu.Framework.UI.BunifuTileButton();
+            this.txb_Money = new System.Windows.Forms.TextBox();
+            this.btn_Pay = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lsvBill = new System.Windows.Forms.ListView();
             this.colum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,8 +50,8 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.floor = new System.Windows.Forms.Label();
-            this.btnFloor2 = new System.Windows.Forms.Button();
-            this.btnFloor1 = new System.Windows.Forms.Button();
+            this.btn_Floor2 = new System.Windows.Forms.Button();
+            this.btn_Floor1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.btnBack = new System.Windows.Forms.Button();
@@ -67,7 +64,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.nudFood = new System.Windows.Forms.NumericUpDown();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDiscount)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -88,19 +85,16 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.label8);
-            this.bunifuGradientPanel1.Controls.Add(this.comboBox2);
-            this.bunifuGradientPanel1.Controls.Add(this.btn_merge);
             this.bunifuGradientPanel1.Controls.Add(this.label7);
-            this.bunifuGradientPanel1.Controls.Add(this.comboBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.btn_move);
+            this.bunifuGradientPanel1.Controls.Add(this.cb_Table1);
+            this.bunifuGradientPanel1.Controls.Add(this.Btn_Switch);
             this.bunifuGradientPanel1.Controls.Add(this.label6);
             this.bunifuGradientPanel1.Controls.Add(this.label5);
-            this.bunifuGradientPanel1.Controls.Add(this.numericUpDown1);
+            this.bunifuGradientPanel1.Controls.Add(this.nudDiscount);
             this.bunifuGradientPanel1.Controls.Add(this.label4);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuTileButton1);
-            this.bunifuGradientPanel1.Controls.Add(this.txb_money);
-            this.bunifuGradientPanel1.Controls.Add(this.btn_pay);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_Exit);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_Money);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_Pay);
             this.bunifuGradientPanel1.Controls.Add(this.lsvBill);
             this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox5);
@@ -117,51 +111,11 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1348, 929);
             this.bunifuGradientPanel1.TabIndex = 13;
             // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1028, 45);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 64);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Gộp sang bàn số";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1030, 108);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(114, 28);
-            this.comboBox2.TabIndex = 27;
-            // 
-            // btn_merge
-            // 
-            this.btn_merge.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_merge.color = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_merge.colorActive = System.Drawing.SystemColors.Highlight;
-            this.btn_merge.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_merge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_merge.ForeColor = System.Drawing.Color.White;
-            this.btn_merge.Image = global::QuanLyBanHang.Properties.Resources.merge;
-            this.btn_merge.ImagePosition = 0;
-            this.btn_merge.ImageZoom = 40;
-            this.btn_merge.LabelPosition = 20;
-            this.btn_merge.LabelText = "Gộp";
-            this.btn_merge.Location = new System.Drawing.Point(897, 45);
-            this.btn_merge.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_merge.Name = "btn_merge";
-            this.btn_merge.Size = new System.Drawing.Size(122, 91);
-            this.btn_merge.TabIndex = 26;
-            // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(748, 45);
+            this.label7.Location = new System.Drawing.Point(843, 45);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(116, 54);
@@ -169,33 +123,34 @@
             this.label7.Text = "Chuyển sang bàn số";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // cb_Table1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(750, 107);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(114, 28);
-            this.comboBox1.TabIndex = 24;
+            this.cb_Table1.FormattingEnabled = true;
+            this.cb_Table1.Location = new System.Drawing.Point(845, 107);
+            this.cb_Table1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb_Table1.Name = "cb_Table1";
+            this.cb_Table1.Size = new System.Drawing.Size(114, 28);
+            this.cb_Table1.TabIndex = 24;
             // 
-            // btn_move
+            // Btn_Switch
             // 
-            this.btn_move.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_move.color = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_move.colorActive = System.Drawing.SystemColors.Highlight;
-            this.btn_move.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_move.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_move.ForeColor = System.Drawing.Color.White;
-            this.btn_move.Image = global::QuanLyBanHang.Properties.Resources.refresh;
-            this.btn_move.ImagePosition = 0;
-            this.btn_move.ImageZoom = 40;
-            this.btn_move.LabelPosition = 20;
-            this.btn_move.LabelText = "Chuyển";
-            this.btn_move.Location = new System.Drawing.Point(600, 45);
-            this.btn_move.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_move.Name = "btn_move";
-            this.btn_move.Size = new System.Drawing.Size(121, 91);
-            this.btn_move.TabIndex = 23;
+            this.Btn_Switch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Btn_Switch.color = System.Drawing.SystemColors.ActiveCaption;
+            this.Btn_Switch.colorActive = System.Drawing.SystemColors.Highlight;
+            this.Btn_Switch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Switch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Switch.ForeColor = System.Drawing.Color.White;
+            this.Btn_Switch.Image = global::QuanLyBanHang.Properties.Resources.refresh;
+            this.Btn_Switch.ImagePosition = 0;
+            this.Btn_Switch.ImageZoom = 40;
+            this.Btn_Switch.LabelPosition = 20;
+            this.Btn_Switch.LabelText = "Chuyển";
+            this.Btn_Switch.Location = new System.Drawing.Point(710, 45);
+            this.Btn_Switch.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Switch.Name = "Btn_Switch";
+            this.Btn_Switch.Size = new System.Drawing.Size(121, 91);
+            this.Btn_Switch.TabIndex = 23;
+            this.Btn_Switch.Click += new System.EventHandler(this.Btn_Switch_Click);
             // 
             // label6
             // 
@@ -221,14 +176,14 @@
             this.label5.Text = "%";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown1
+            // nudDiscount
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(762, 649);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(228, 26);
-            this.numericUpDown1.TabIndex = 20;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudDiscount.Location = new System.Drawing.Point(762, 649);
+            this.nudDiscount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nudDiscount.Name = "nudDiscount";
+            this.nudDiscount.Size = new System.Drawing.Size(228, 26);
+            this.nudDiscount.TabIndex = 20;
+            this.nudDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -242,73 +197,73 @@
             this.label4.Text = "Giảm giá";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuTileButton1
+            // btn_Exit
             // 
-            this.bunifuTileButton1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuTileButton1.color = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuTileButton1.colorActive = System.Drawing.SystemColors.Highlight;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = global::QuanLyBanHang.Properties.Resources.exit;
-            this.bunifuTileButton1.ImagePosition = 0;
-            this.bunifuTileButton1.ImageZoom = 40;
-            this.bunifuTileButton1.LabelPosition = 26;
-            this.bunifuTileButton1.LabelText = "Thoát";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(1156, 45);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(8);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(130, 91);
-            this.bunifuTileButton1.TabIndex = 18;
-            this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
+            this.btn_Exit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Exit.color = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Exit.colorActive = System.Drawing.SystemColors.Highlight;
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Image = global::QuanLyBanHang.Properties.Resources.exit;
+            this.btn_Exit.ImagePosition = 0;
+            this.btn_Exit.ImageZoom = 40;
+            this.btn_Exit.LabelPosition = 26;
+            this.btn_Exit.LabelText = "Thoát";
+            this.btn_Exit.Location = new System.Drawing.Point(1156, 45);
+            this.btn_Exit.Margin = new System.Windows.Forms.Padding(8);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(130, 91);
+            this.btn_Exit.TabIndex = 18;
+            this.btn_Exit.Click += new System.EventHandler(this.bunifuTileButton1_Click);
             // 
-            // txb_money
+            // txb_Money
             // 
-            this.txb_money.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_money.Location = new System.Drawing.Point(600, 692);
-            this.txb_money.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txb_money.Multiline = true;
-            this.txb_money.Name = "txb_money";
-            this.txb_money.Size = new System.Drawing.Size(388, 35);
-            this.txb_money.TabIndex = 17;
-            this.txb_money.Text = "0";
-            this.txb_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txb_Money.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Money.Location = new System.Drawing.Point(600, 692);
+            this.txb_Money.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_Money.Multiline = true;
+            this.txb_Money.Name = "txb_Money";
+            this.txb_Money.Size = new System.Drawing.Size(388, 35);
+            this.txb_Money.TabIndex = 17;
+            this.txb_Money.Text = "0";
+            this.txb_Money.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // btn_pay
+            // btn_Pay
             // 
-            this.btn_pay.Activecolor = System.Drawing.SystemColors.Highlight;
-            this.btn_pay.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_pay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_pay.BorderRadius = 0;
-            this.btn_pay.ButtonText = "Thanh toán";
-            this.btn_pay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_pay.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_pay.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_pay.Iconimage = null;
-            this.btn_pay.Iconimage_right = global::QuanLyBanHang.Properties.Resources.coin;
-            this.btn_pay.Iconimage_right_Selected = null;
-            this.btn_pay.Iconimage_Selected = null;
-            this.btn_pay.IconMarginLeft = 0;
-            this.btn_pay.IconMarginRight = 0;
-            this.btn_pay.IconRightVisible = true;
-            this.btn_pay.IconRightZoom = 0D;
-            this.btn_pay.IconVisible = false;
-            this.btn_pay.IconZoom = 80D;
-            this.btn_pay.IsTab = false;
-            this.btn_pay.Location = new System.Drawing.Point(1085, 649);
-            this.btn_pay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_pay.Name = "btn_pay";
-            this.btn_pay.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_pay.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_pay.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_pay.selected = false;
-            this.btn_pay.Size = new System.Drawing.Size(203, 78);
-            this.btn_pay.TabIndex = 14;
-            this.btn_pay.Text = "Thanh toán";
-            this.btn_pay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_pay.Textcolor = System.Drawing.Color.White;
-            this.btn_pay.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pay.Click += new System.EventHandler(this.btn_pay_Click);
+            this.btn_Pay.Activecolor = System.Drawing.SystemColors.Highlight;
+            this.btn_Pay.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Pay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Pay.BorderRadius = 0;
+            this.btn_Pay.ButtonText = "Thanh toán";
+            this.btn_Pay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Pay.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Pay.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Pay.Iconimage = null;
+            this.btn_Pay.Iconimage_right = global::QuanLyBanHang.Properties.Resources.coin;
+            this.btn_Pay.Iconimage_right_Selected = null;
+            this.btn_Pay.Iconimage_Selected = null;
+            this.btn_Pay.IconMarginLeft = 0;
+            this.btn_Pay.IconMarginRight = 0;
+            this.btn_Pay.IconRightVisible = true;
+            this.btn_Pay.IconRightZoom = 0D;
+            this.btn_Pay.IconVisible = false;
+            this.btn_Pay.IconZoom = 80D;
+            this.btn_Pay.IsTab = false;
+            this.btn_Pay.Location = new System.Drawing.Point(1085, 649);
+            this.btn_Pay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Pay.Name = "btn_Pay";
+            this.btn_Pay.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Pay.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Pay.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Pay.selected = false;
+            this.btn_Pay.Size = new System.Drawing.Size(203, 78);
+            this.btn_Pay.TabIndex = 14;
+            this.btn_Pay.Text = "Thanh toán";
+            this.btn_Pay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Pay.Textcolor = System.Drawing.Color.White;
+            this.btn_Pay.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Pay.Click += new System.EventHandler(this.btn_pay_Click);
             // 
             // lsvBill
             // 
@@ -350,8 +305,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.floor);
-            this.panel1.Controls.Add(this.btnFloor2);
-            this.panel1.Controls.Add(this.btnFloor1);
+            this.panel1.Controls.Add(this.btn_Floor2);
+            this.panel1.Controls.Add(this.btn_Floor1);
             this.panel1.Location = new System.Drawing.Point(32, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(512, 91);
@@ -366,28 +321,29 @@
             this.floor.TabIndex = 2;
             this.floor.Text = "Tầng ";
             // 
-            // btnFloor2
+            // btn_Floor2
             // 
-            this.btnFloor2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnFloor2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFloor2.Image = ((System.Drawing.Image)(resources.GetObject("btnFloor2.Image")));
-            this.btnFloor2.Location = new System.Drawing.Point(320, 8);
-            this.btnFloor2.Name = "btnFloor2";
-            this.btnFloor2.Size = new System.Drawing.Size(117, 82);
-            this.btnFloor2.TabIndex = 1;
-            this.btnFloor2.UseVisualStyleBackColor = false;
+            this.btn_Floor2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_Floor2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Floor2.Image = ((System.Drawing.Image)(resources.GetObject("btn_Floor2.Image")));
+            this.btn_Floor2.Location = new System.Drawing.Point(320, 8);
+            this.btn_Floor2.Name = "btn_Floor2";
+            this.btn_Floor2.Size = new System.Drawing.Size(117, 82);
+            this.btn_Floor2.TabIndex = 1;
+            this.btn_Floor2.UseVisualStyleBackColor = false;
+            this.btn_Floor2.Click += new System.EventHandler(this.btn_Floor2_Click);
             // 
-            // btnFloor1
+            // btn_Floor1
             // 
-            this.btnFloor1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnFloor1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFloor1.Image = ((System.Drawing.Image)(resources.GetObject("btnFloor1.Image")));
-            this.btnFloor1.Location = new System.Drawing.Point(148, 8);
-            this.btnFloor1.Name = "btnFloor1";
-            this.btnFloor1.Size = new System.Drawing.Size(117, 82);
-            this.btnFloor1.TabIndex = 0;
-            this.btnFloor1.UseVisualStyleBackColor = false;
-            this.btnFloor1.Click += new System.EventHandler(this.btnFloor1_Click);
+            this.btn_Floor1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_Floor1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Floor1.Image = ((System.Drawing.Image)(resources.GetObject("btn_Floor1.Image")));
+            this.btn_Floor1.Location = new System.Drawing.Point(148, 8);
+            this.btn_Floor1.Name = "btn_Floor1";
+            this.btn_Floor1.Size = new System.Drawing.Size(117, 82);
+            this.btn_Floor1.TabIndex = 0;
+            this.btn_Floor1.UseVisualStyleBackColor = false;
+            this.btn_Floor1.Click += new System.EventHandler(this.btnFloor1_Click);
             // 
             // pictureBox5
             // 
@@ -552,7 +508,7 @@
             this.Text = "Phần mềm quản lí quán Cafe";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDiscount)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -572,8 +528,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label floor;
-        private System.Windows.Forms.Button btnFloor2;
-        private System.Windows.Forms.Button btnFloor1;
+        private System.Windows.Forms.Button btn_Floor2;
+        private System.Windows.Forms.Button btn_Floor1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
@@ -582,21 +538,17 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddFood;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_pay;
-        private System.Windows.Forms.TextBox txb_money;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_Pay;
+        private System.Windows.Forms.TextBox txb_Money;
+        private Bunifu.Framework.UI.BunifuTileButton btn_Exit;
+        private System.Windows.Forms.NumericUpDown nudDiscount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Bunifu.Framework.UI.BunifuTileButton btn_move;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private Bunifu.Framework.UI.BunifuTileButton btn_merge;
+        private System.Windows.Forms.ComboBox cb_Table1;
+        private Bunifu.Framework.UI.BunifuTileButton Btn_Switch;
         private System.Windows.Forms.ComboBox cbFood;
         private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.NumericUpDown nudFood;

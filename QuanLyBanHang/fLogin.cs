@@ -1,4 +1,5 @@
 ﻿using QuanLyBanHang.DAO;
+using QuanLyBanHang.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,14 +36,16 @@ namespace QuanLyBanHang
             string password = txbLoginPassword.Text;
             if (login(username, password)&& isStafff(username,password)==false)
             {
-                fManager manage = new fManager();
+                Account loginAccount = AccountDAO.Instance.GetAccountByUserName(username);
+                fManager manage = new fManager(loginAccount);
                 this.Hide();
                 manage.ShowDialog();
                 this.Show();
             }
             else if (login(username, password) && isStafff(username, password) )
             {
-                fStaff staff = new fStaff();
+                Account loginAccount = AccountDAO.Instance.GetAccountByUserName(username);
+                fStaff staff = new fStaff(loginAccount);
                 this.Hide();
                 staff.ShowDialog();
                 this.Show();

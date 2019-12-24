@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBanHang.DAO;
+using QuanLyBanHang.DTO;
 
 namespace QuanLyBanHang
 {
@@ -15,12 +17,10 @@ namespace QuanLyBanHang
     {
         UsC_Revuene rev = new UsC_Revuene();
         UsC_Drink drink = new UsC_Drink();
-        UsC_Food food = new UsC_Food();
         UsC_Staff staff = new UsC_Staff();
         public Admin()
         {
             InitializeComponent();
-
             this.Load += Admin_Load;
         }
 
@@ -28,13 +28,13 @@ namespace QuanLyBanHang
         {
             pnl_usercontrol.Controls.Add(rev);
             pnl_usercontrol.Controls.Add(drink);
-            pnl_usercontrol.Controls.Add(food);
             pnl_usercontrol.Controls.Add(staff);
+            
         }
 
         private void btn_food_Click(object sender, EventArgs e)
         {
-            food.BringToFront();
+           
         }
 
         private void btn_rev_Click(object sender, EventArgs e)

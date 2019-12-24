@@ -30,267 +30,309 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsC_Drink));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_Search = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_adddrink = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txb_SearchFood = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btn_ViewFood = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_UpdateFood = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_DeleteFood = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_AddFood = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.cb_FoodCategory = new System.Windows.Forms.ComboBox();
+            this.txb_FoodPrice = new System.Windows.Forms.TextBox();
+            this.txb_FoodName = new System.Windows.Forms.TextBox();
+            this.txb_FoodID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvListFood = new System.Windows.Forms.DataGridView();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvListFood)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btn_Search);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
-            this.bunifuGradientPanel1.Controls.Add(this.label5);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuTextbox1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton1);
-            this.bunifuGradientPanel1.Controls.Add(this.btn_adddrink);
-            this.bunifuGradientPanel1.Controls.Add(this.comboBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox3);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox2);
-            this.bunifuGradientPanel1.Controls.Add(this.textBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_SearchFood);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_ViewFood);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_UpdateFood);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_DeleteFood);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_AddFood);
+            this.bunifuGradientPanel1.Controls.Add(this.cb_FoodCategory);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_FoodPrice);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_FoodName);
+            this.bunifuGradientPanel1.Controls.Add(this.txb_FoodID);
             this.bunifuGradientPanel1.Controls.Add(this.label4);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
-            this.bunifuGradientPanel1.Controls.Add(this.dataGridView1);
+            this.bunifuGradientPanel1.Controls.Add(this.dtgvListFood);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.SystemColors.HotTrack;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.SystemColors.ActiveCaption;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Tan;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.SandyBrown;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(688, 416);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1032, 640);
             this.bunifuGradientPanel1.TabIndex = 1;
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Search.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Search.BorderRadius = 0;
+            this.btn_Search.ButtonText = "Tìm kiếm";
+            this.btn_Search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Search.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Search.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Search.Iconimage = null;
+            this.btn_Search.Iconimage_right = null;
+            this.btn_Search.Iconimage_right_Selected = null;
+            this.btn_Search.Iconimage_Selected = null;
+            this.btn_Search.IconMarginLeft = 0;
+            this.btn_Search.IconMarginRight = 0;
+            this.btn_Search.IconRightVisible = true;
+            this.btn_Search.IconRightZoom = 0D;
+            this.btn_Search.IconVisible = true;
+            this.btn_Search.IconZoom = 90D;
+            this.btn_Search.IsTab = false;
+            this.btn_Search.Location = new System.Drawing.Point(400, 27);
+            this.btn_Search.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Search.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_Search.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Search.selected = false;
+            this.btn_Search.Size = new System.Drawing.Size(109, 46);
+            this.btn_Search.TabIndex = 17;
+            this.btn_Search.Text = "Tìm kiếm";
+            this.btn_Search.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Search.Textcolor = System.Drawing.Color.White;
+            this.btn_Search.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::QuanLyBanHang.Properties.Resources.cocktails;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(614, 3);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(921, 5);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(106, 109);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 16;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // label5
+            // txb_SearchFood
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 42);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Tìm kiếm";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txb_SearchFood.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txb_SearchFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txb_SearchFood.BackgroundImage")));
+            this.txb_SearchFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txb_SearchFood.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txb_SearchFood.Icon = ((System.Drawing.Image)(resources.GetObject("txb_SearchFood.Icon")));
+            this.txb_SearchFood.Location = new System.Drawing.Point(6, 17);
+            this.txb_SearchFood.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txb_SearchFood.Name = "txb_SearchFood";
+            this.txb_SearchFood.Size = new System.Drawing.Size(375, 65);
+            this.txb_SearchFood.TabIndex = 14;
+            this.txb_SearchFood.text = "";
             // 
-            // bunifuTextbox1
+            // btn_ViewFood
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(161, 14);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(250, 42);
-            this.bunifuTextbox1.TabIndex = 14;
-            this.bunifuTextbox1.text = "Bunifu TextBox";
+            this.btn_ViewFood.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_ViewFood.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ViewFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ViewFood.BorderRadius = 0;
+            this.btn_ViewFood.ButtonText = "Xem";
+            this.btn_ViewFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ViewFood.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_ViewFood.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_ViewFood.Iconimage = null;
+            this.btn_ViewFood.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btn_ViewFood.Iconimage_right")));
+            this.btn_ViewFood.Iconimage_right_Selected = null;
+            this.btn_ViewFood.Iconimage_Selected = null;
+            this.btn_ViewFood.IconMarginLeft = 0;
+            this.btn_ViewFood.IconMarginRight = 0;
+            this.btn_ViewFood.IconRightVisible = true;
+            this.btn_ViewFood.IconRightZoom = 0D;
+            this.btn_ViewFood.IconVisible = false;
+            this.btn_ViewFood.IconZoom = 90D;
+            this.btn_ViewFood.IsTab = false;
+            this.btn_ViewFood.Location = new System.Drawing.Point(626, 95);
+            this.btn_ViewFood.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btn_ViewFood.Name = "btn_ViewFood";
+            this.btn_ViewFood.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_ViewFood.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_ViewFood.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_ViewFood.selected = false;
+            this.btn_ViewFood.Size = new System.Drawing.Size(145, 74);
+            this.btn_ViewFood.TabIndex = 13;
+            this.btn_ViewFood.Text = "Xem";
+            this.btn_ViewFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ViewFood.Textcolor = System.Drawing.Color.White;
+            this.btn_ViewFood.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ViewFood.Click += new System.EventHandler(this.btn_ViewFood_Click);
             // 
-            // bunifuFlatButton3
+            // btn_UpdateFood
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Thêm món";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = null;
-            this.bunifuFlatButton3.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = false;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(417, 62);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(138, 48);
-            this.bunifuFlatButton3.TabIndex = 13;
-            this.bunifuFlatButton3.Text = "Thêm món";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UpdateFood.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_UpdateFood.BackColor = System.Drawing.Color.Transparent;
+            this.btn_UpdateFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_UpdateFood.BorderRadius = 0;
+            this.btn_UpdateFood.ButtonText = "Sửa món";
+            this.btn_UpdateFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_UpdateFood.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_UpdateFood.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_UpdateFood.Iconimage = null;
+            this.btn_UpdateFood.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btn_UpdateFood.Iconimage_right")));
+            this.btn_UpdateFood.Iconimage_right_Selected = null;
+            this.btn_UpdateFood.Iconimage_Selected = null;
+            this.btn_UpdateFood.IconMarginLeft = 0;
+            this.btn_UpdateFood.IconMarginRight = 0;
+            this.btn_UpdateFood.IconRightVisible = true;
+            this.btn_UpdateFood.IconRightZoom = 0D;
+            this.btn_UpdateFood.IconVisible = false;
+            this.btn_UpdateFood.IconZoom = 90D;
+            this.btn_UpdateFood.IsTab = false;
+            this.btn_UpdateFood.Location = new System.Drawing.Point(626, 562);
+            this.btn_UpdateFood.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btn_UpdateFood.Name = "btn_UpdateFood";
+            this.btn_UpdateFood.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_UpdateFood.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_UpdateFood.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_UpdateFood.selected = false;
+            this.btn_UpdateFood.Size = new System.Drawing.Size(207, 74);
+            this.btn_UpdateFood.TabIndex = 12;
+            this.btn_UpdateFood.Text = "Sửa món";
+            this.btn_UpdateFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_UpdateFood.Textcolor = System.Drawing.Color.White;
+            this.btn_UpdateFood.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UpdateFood.Click += new System.EventHandler(this.btn_UpdateFood_Click);
             // 
-            // bunifuFlatButton2
+            // btn_DeleteFood
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Thêm món";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = false;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(417, 365);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(138, 48);
-            this.bunifuFlatButton2.TabIndex = 12;
-            this.bunifuFlatButton2.Text = "Thêm món";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DeleteFood.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_DeleteFood.BackColor = System.Drawing.Color.Transparent;
+            this.btn_DeleteFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_DeleteFood.BorderRadius = 0;
+            this.btn_DeleteFood.ButtonText = "Xóa món";
+            this.btn_DeleteFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DeleteFood.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_DeleteFood.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_DeleteFood.Iconimage = null;
+            this.btn_DeleteFood.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btn_DeleteFood.Iconimage_right")));
+            this.btn_DeleteFood.Iconimage_right_Selected = null;
+            this.btn_DeleteFood.Iconimage_Selected = null;
+            this.btn_DeleteFood.IconMarginLeft = 0;
+            this.btn_DeleteFood.IconMarginRight = 0;
+            this.btn_DeleteFood.IconRightVisible = true;
+            this.btn_DeleteFood.IconRightZoom = 0D;
+            this.btn_DeleteFood.IconVisible = false;
+            this.btn_DeleteFood.IconZoom = 90D;
+            this.btn_DeleteFood.IsTab = false;
+            this.btn_DeleteFood.Location = new System.Drawing.Point(626, 478);
+            this.btn_DeleteFood.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btn_DeleteFood.Name = "btn_DeleteFood";
+            this.btn_DeleteFood.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_DeleteFood.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_DeleteFood.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_DeleteFood.selected = false;
+            this.btn_DeleteFood.Size = new System.Drawing.Size(207, 74);
+            this.btn_DeleteFood.TabIndex = 11;
+            this.btn_DeleteFood.Text = "Xóa món";
+            this.btn_DeleteFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_DeleteFood.Textcolor = System.Drawing.Color.White;
+            this.btn_DeleteFood.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DeleteFood.Click += new System.EventHandler(this.btn_DeleteFood_Click);
             // 
-            // bunifuFlatButton1
+            // btn_AddFood
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Thêm món";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = false;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(417, 311);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(138, 48);
-            this.bunifuFlatButton1.TabIndex = 11;
-            this.bunifuFlatButton1.Text = "Thêm món";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddFood.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_AddFood.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_AddFood.BorderRadius = 0;
+            this.btn_AddFood.ButtonText = "Thêm món";
+            this.btn_AddFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AddFood.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_AddFood.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_AddFood.Iconimage = null;
+            this.btn_AddFood.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
+            this.btn_AddFood.Iconimage_right_Selected = null;
+            this.btn_AddFood.Iconimage_Selected = null;
+            this.btn_AddFood.IconMarginLeft = 0;
+            this.btn_AddFood.IconMarginRight = 0;
+            this.btn_AddFood.IconRightVisible = true;
+            this.btn_AddFood.IconRightZoom = 0D;
+            this.btn_AddFood.IconVisible = false;
+            this.btn_AddFood.IconZoom = 90D;
+            this.btn_AddFood.IsTab = false;
+            this.btn_AddFood.Location = new System.Drawing.Point(626, 395);
+            this.btn_AddFood.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btn_AddFood.Name = "btn_AddFood";
+            this.btn_AddFood.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_AddFood.OnHovercolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_AddFood.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_AddFood.selected = false;
+            this.btn_AddFood.Size = new System.Drawing.Size(207, 74);
+            this.btn_AddFood.TabIndex = 10;
+            this.btn_AddFood.Text = "Thêm món";
+            this.btn_AddFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_AddFood.Textcolor = System.Drawing.Color.White;
+            this.btn_AddFood.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddFood.Click += new System.EventHandler(this.btn_AddFood_Click);
             // 
-            // btn_adddrink
+            // cb_FoodCategory
             // 
-            this.btn_adddrink.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_adddrink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_adddrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_adddrink.BorderRadius = 0;
-            this.btn_adddrink.ButtonText = "Thêm món";
-            this.btn_adddrink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_adddrink.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_adddrink.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_adddrink.Iconimage = null;
-            this.btn_adddrink.Iconimage_right = global::QuanLyBanHang.Properties.Resources.add;
-            this.btn_adddrink.Iconimage_right_Selected = null;
-            this.btn_adddrink.Iconimage_Selected = null;
-            this.btn_adddrink.IconMarginLeft = 0;
-            this.btn_adddrink.IconMarginRight = 0;
-            this.btn_adddrink.IconRightVisible = true;
-            this.btn_adddrink.IconRightZoom = 0D;
-            this.btn_adddrink.IconVisible = false;
-            this.btn_adddrink.IconZoom = 90D;
-            this.btn_adddrink.IsTab = false;
-            this.btn_adddrink.Location = new System.Drawing.Point(417, 257);
-            this.btn_adddrink.Name = "btn_adddrink";
-            this.btn_adddrink.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_adddrink.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btn_adddrink.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_adddrink.selected = false;
-            this.btn_adddrink.Size = new System.Drawing.Size(138, 48);
-            this.btn_adddrink.TabIndex = 10;
-            this.btn_adddrink.Text = "Thêm món";
-            this.btn_adddrink.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_adddrink.Textcolor = System.Drawing.Color.White;
-            this.btn_adddrink.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_FoodCategory.FormattingEnabled = true;
+            this.cb_FoodCategory.Location = new System.Drawing.Point(780, 343);
+            this.cb_FoodCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb_FoodCategory.Name = "cb_FoodCategory";
+            this.cb_FoodCategory.Size = new System.Drawing.Size(241, 28);
+            this.cb_FoodCategory.TabIndex = 8;
             // 
-            // comboBox1
+            // txb_FoodPrice
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(520, 223);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 21);
-            this.comboBox1.TabIndex = 8;
+            this.txb_FoodPrice.Location = new System.Drawing.Point(780, 292);
+            this.txb_FoodPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_FoodPrice.Name = "txb_FoodPrice";
+            this.txb_FoodPrice.Size = new System.Drawing.Size(241, 26);
+            this.txb_FoodPrice.TabIndex = 7;
             // 
-            // textBox3
+            // txb_FoodName
             // 
-            this.textBox3.Location = new System.Drawing.Point(520, 190);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 7;
+            this.txb_FoodName.Location = new System.Drawing.Point(780, 243);
+            this.txb_FoodName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_FoodName.Name = "txb_FoodName";
+            this.txb_FoodName.Size = new System.Drawing.Size(241, 26);
+            this.txb_FoodName.TabIndex = 6;
             // 
-            // textBox2
+            // txb_FoodID
             // 
-            this.textBox2.Location = new System.Drawing.Point(520, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(520, 126);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 5;
+            this.txb_FoodID.Location = new System.Drawing.Point(780, 194);
+            this.txb_FoodID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_FoodID.Name = "txb_FoodID";
+            this.txb_FoodID.Size = new System.Drawing.Size(241, 26);
+            this.txb_FoodID.TabIndex = 5;
+            this.txb_FoodID.TextChanged += new System.EventHandler(this.txb_FoodID_TextChanged);
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(414, 221);
+            this.label4.Location = new System.Drawing.Point(621, 340);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.Size = new System.Drawing.Size(150, 35);
             this.label4.TabIndex = 4;
             this.label4.Text = "Loại";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,9 +341,10 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(414, 188);
+            this.label3.Location = new System.Drawing.Point(621, 289);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.Size = new System.Drawing.Size(150, 35);
             this.label3.TabIndex = 3;
             this.label3.Text = "Giá";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -310,9 +353,10 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(414, 156);
+            this.label2.Location = new System.Drawing.Point(621, 240);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(150, 35);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,32 +365,39 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(414, 124);
+            this.label1.Location = new System.Drawing.Point(621, 191);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(150, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "STT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dtgvListFood
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(408, 351);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvListFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvListFood.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtgvListFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListFood.Location = new System.Drawing.Point(4, 95);
+            this.dtgvListFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgvListFood.Name = "dtgvListFood";
+            this.dtgvListFood.ReadOnly = true;
+            this.dtgvListFood.RowHeadersWidth = 62;
+            this.dtgvListFood.Size = new System.Drawing.Size(612, 540);
+            this.dtgvListFood.TabIndex = 0;
             // 
             // UsC_Drink
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UsC_Drink";
-            this.Size = new System.Drawing.Size(688, 416);
+            this.Size = new System.Drawing.Size(1032, 640);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvListFood)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,21 +405,21 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_adddrink;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dtgvListFood;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_AddFood;
+        private System.Windows.Forms.ComboBox cb_FoodCategory;
+        private System.Windows.Forms.TextBox txb_FoodPrice;
+        private System.Windows.Forms.TextBox txb_FoodName;
+        private System.Windows.Forms.TextBox txb_FoodID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_ViewFood;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_UpdateFood;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_DeleteFood;
+        private Bunifu.Framework.UI.BunifuTextbox txb_SearchFood;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_Search;
     }
 }

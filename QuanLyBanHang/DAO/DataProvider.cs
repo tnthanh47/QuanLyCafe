@@ -11,7 +11,7 @@ namespace QuanLyBanHang.DAO
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=True";
+        private string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
 
         public static DataProvider Instance 
         {

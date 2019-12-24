@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyBanHang.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace QuanLyBanHang
 {
     public partial class fManager : Form
     {
-        public fManager()
+        private Account loginAccount;
+
+        public Account LoginAccount { get { return loginAccount; } set { loginAccount = value; } }
+
+        public fManager(Account acc)
         {
             InitializeComponent();
+            this.LoginAccount = acc;
         }
 
         private void btnManager_Click(object sender, EventArgs e)
@@ -35,7 +41,7 @@ namespace QuanLyBanHang
 
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            fAcountProfile acountProfile = new fAcountProfile();
+            fAcountProfile acountProfile = new fAcountProfile(LoginAccount);
             this.Hide();
             acountProfile.ShowDialog();
             this.Show();
@@ -43,9 +49,9 @@ namespace QuanLyBanHang
 
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
-            fAcountProfile acountProfile = new fAcountProfile();
+            fCreateAccount createAccount = new fCreateAccount();
             this.Hide();
-            acountProfile.ShowDialog();
+            createAccount.ShowDialog();
             this.Show();
         }
 

@@ -21,7 +21,7 @@ namespace QuanLyBanHang.DAO
         public List<Menu> GetListMenu(int id)
         {
             List<Menu> listMenu = new List<Menu>();
-            string query = "SELECT FOOD.NAME,FOOD.PRICE,BILLINFO.COUNT, FOOD.PRICE*BILLINFO.COUNT AS TOTALPRICE FROM FOOD, BILL, BILLINFO WHERE FOOD.ID = BILLINFO.IDFOOD AND BILL.ID = BILLINFO.IDBILL AND IDTABLE =" + id;
+            string query = "SELECT FOOD.NAME,FOOD.PRICE,BILLINFO.COUNT, FOOD.PRICE*BILLINFO.COUNT AS TOTALPRICE FROM FOOD, BILL, BILLINFO WHERE FOOD.ID = BILLINFO.IDFOOD AND BILL.STATUS = 0 AND BILL.ID = BILLINFO.IDBILL AND IDTABLE =" + id;
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {

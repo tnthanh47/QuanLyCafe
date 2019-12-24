@@ -113,7 +113,7 @@
             this.txbLoginAccount.Name = "txbLoginAccount";
             this.txbLoginAccount.Size = new System.Drawing.Size(282, 45);
             this.txbLoginAccount.TabIndex = 1;
-            this.txbLoginAccount.Text = "thanhlenguyen";
+            this.txbLoginAccount.Text = "thanh";
             this.txbLoginAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txbLoginPassword
@@ -154,11 +154,11 @@
             this.animation.SetDecoration(this.btnLogin, BunifuAnimatorNS.DecorationType.None);
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogin.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(206, 726);
+            this.btnLogin.Location = new System.Drawing.Point(330, 737);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(108, 35);
+            this.btnLogin.Size = new System.Drawing.Size(121, 49);
             this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Text = "ĐĂNG NHẬP";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -167,11 +167,11 @@
             this.animation.SetDecoration(this.btnExit, BunifuAnimatorNS.DecorationType.None);
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(334, 726);
+            this.btnExit.Location = new System.Drawing.Point(189, 737);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(105, 35);
+            this.btnExit.Size = new System.Drawing.Size(119, 49);
             this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Thoát";
+            this.btnExit.Text = "THOÁT";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -201,7 +201,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
