@@ -72,7 +72,78 @@ CREATE TABLE BillInfo
 )
 GO
 --------------------------
+--tạo trigger
+CREATE TRIGGER UTG_UpdateBillInfo
+ON dbo.BillInfo FOR INSERT, UPDATE
+AS
+BEGIN
+	DECLARE @idBill INT
+	
+	SELECT @idBill = idBill FROM Inserted
+	
+	DECLARE @idTable INT
+	
+	SELECT @idTable = idTable FROM dbo.Bill WHERE id = @idBill AND status = 0	
+	
+	DECLARE @count INT
+	SELECT @count = COUNT(*) FROM dbo.BillInfo WHERE idBill = @idBill
+	
+	IF (@count > 0)
+	BEGIN
+	
+		
+		UPDATE dbo.TableFood SET status = N'Có người' WHERE id = @idTable		
+		
+	END		
+	ELSE
+	BEGIN
 
+	UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable	
+	end
+	
+END
+GO
+
+
+CREATE TRIGGER UTG_UpdateBill
+ON dbo.Bill FOR UPDATE
+AS
+BEGIN
+	DECLARE @idBill INT
+	
+	SELECT @idBill = id FROM Inserted	
+	
+	DECLARE @idTable INT
+	
+	SELECT @idTable = idTable FROM dbo.Bill WHERE id = @idBill
+	
+	DECLARE @count int = 0
+	
+	SELECT @count = COUNT(*) FROM dbo.Bill WHERE idTable = @idTable AND status = 0
+	
+	IF (@count = 0)
+		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
+END
+GO
+CREATE TRIGGER UTG_DeleteBillInfo
+ON BillInfo FOR DELETE
+AS 
+BEGIN
+	DECLARE @idBillInfo INT
+	DECLARE @idBill INT
+	SELECT @idBillInfo = id, @idBill = Deleted.idBill FROM Deleted
+	
+	DECLARE @idTable INT
+	SELECT @idTable = idTable FROM Bill WHERE id = @idBill
+	
+	DECLARE @count INT = 0
+	
+	SELECT @count = COUNT(*) FROM BillInfo AS bi, Bill AS b WHERE b.id = bi.idBill AND b.id = @idBill AND b.status = 0
+	
+	IF (@count = 0)
+		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
+END
+GO
 --- Tạo procedure 
 CREATE PROC USP_GetAccountByUserName
 @userName nvarchar(100)
@@ -162,62 +233,8 @@ BEGIN
 END
 GO
 
-DELETE dbo.BillInfo
-
-DELETE dbo.Bill
-
-CREATE TRIGGER UTG_UpdateBillInfo
-ON dbo.BillInfo FOR INSERT, UPDATE
-AS
-BEGIN
-	DECLARE @idBill INT
-	
-	SELECT @idBill = idBill FROM Inserted
-	
-	DECLARE @idTable INT
-	
-	SELECT @idTable = idTable FROM dbo.Bill WHERE id = @idBill AND status = 0	
-	
-	DECLARE @count INT
-	SELECT @count = COUNT(*) FROM dbo.BillInfo WHERE idBill = @idBill
-	
-	IF (@count > 0)
-	BEGIN
-	
-		
-		UPDATE dbo.TableFood SET status = N'Có người' WHERE id = @idTable		
-		
-	END		
-	ELSE
-	BEGIN
-
-	UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable	
-	end
-	
-END
-GO
 
 
-CREATE TRIGGER UTG_UpdateBill
-ON dbo.Bill FOR UPDATE
-AS
-BEGIN
-	DECLARE @idBill INT
-	
-	SELECT @idBill = id FROM Inserted	
-	
-	DECLARE @idTable INT
-	
-	SELECT @idTable = idTable FROM dbo.Bill WHERE id = @idBill
-	
-	DECLARE @count int = 0
-	
-	SELECT @count = COUNT(*) FROM dbo.Bill WHERE idTable = @idTable AND status = 0
-	
-	IF (@count = 0)
-		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
-END
-GO
 
 
 
@@ -293,14 +310,9 @@ AS BEGIN
 END
 GO
 
-ALTER TABLE dbo.Bill ADD totalPrice FLOAT
 
-DELETE dbo.BillInfo
-DELETE dbo.Bill
 
-GO
-
-Alter PROC USP_GetListBillByDate
+Create PROC USP_GetListBillByDate
 @checkIn date, @checkOut date
 AS 
 BEGIN
@@ -331,27 +343,9 @@ BEGIN
 END
 GO
 
-CREATE TRIGGER UTG_DeleteBillInfo
-ON BillInfo FOR DELETE
-AS 
-BEGIN
-	DECLARE @idBillInfo INT
-	DECLARE @idBill INT
-	SELECT @idBillInfo = id, @idBill = Deleted.idBill FROM Deleted
-	
-	DECLARE @idTable INT
-	SELECT @idTable = idTable FROM Bill WHERE id = @idBill
-	
-	DECLARE @count INT = 0
-	
-	SELECT @count = COUNT(*) FROM BillInfo AS bi, Bill AS b WHERE b.id = bi.idBill AND b.id = @idBill AND b.status = 0
-	
-	IF (@count = 0)
-		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
-END
-GO
 
-Alter PROC USP_GetListBillByDateAndPage
+
+Create PROC USP_GetListBillByDateAndPage
 @checkIn date, @checkOut date, @page int
 AS 
 BEGIN
@@ -390,7 +384,7 @@ VALUES (N'staff',N'staff',N'1',0)
 -- thêm bàn
 
 set identity_insert dbo.TableFood on
-set identity_insert dbo.TableFood off
+
 
 insert into TABLEFOOD(ID,NAME,STATUS) values(1,N'Bàn 1',N'Trống')
 insert into TABLEFOOD(ID,NAME,STATUS) values(2,N'Bàn 2',N'Trống')
@@ -416,16 +410,14 @@ insert into TABLEFOOD(ID,NAME,STATUS) values(21,N'Bàn 21',N'Trống')
 insert into TABLEFOOD(ID,NAME,STATUS) values(22,N'Bàn 22',N'Trống')
 insert into TABLEFOOD(ID,NAME,STATUS) values(23,N'Bàn 23',N'Trống')
 insert into TABLEFOOD(ID,NAME,STATUS) values(24,N'Bàn 24',N'Trống')
-
+set identity_insert dbo.TableFood off
 SELECT * FROM TABLEFOOD
-DELETE  TABLEFOOD
-DELETE BILL
-DELETE BillInfo
+
 
 
 -- idcategory : 1-Tra , 2-DaXay, 3-SinhTo, 4-Cafe, 5-DoAn
 set identity_insert FOODCATEGORY on
-set identity_insert FOODCATEGORY off
+
 
 INSERT FOODCATEGORY(ID,NAME) VALUES (1,N'Trà')
 INSERT FOODCATEGORY(ID,NAME) VALUES (2,N'Đá xay')
@@ -498,8 +490,7 @@ insert into Food(id,Name,idCategory,price) values('47','Banh mi ngot','5','7000'
 insert into Food(id,Name,idCategory,price) values('48','Hoanh thanh','5','10000')
 insert into Food(id,Name,idCategory,price) values('49','Ha cao','5','15000')
 insert into Food(id,Name,idCategory,price) values('50','Mi trung','5','15000')
-
+set identity_insert FOODCATEGORY off
 SELECT* from FoodCategory
 select * from food
 
-select UserName as 'Tên hiển thị' from Account
