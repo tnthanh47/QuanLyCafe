@@ -32,20 +32,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCreateAccount));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbRePassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.txbDisplayName = new System.Windows.Forms.TextBox();
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbDisplayName = new System.Windows.Forms.Label();
             this.txbAccount = new System.Windows.Forms.TextBox();
             this.lbAccount = new System.Windows.Forms.Label();
-            this.txbRePassword = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txbType = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.nudType = new System.Windows.Forms.NumericUpDown();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudType)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -57,10 +58,10 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.nudType);
             this.bunifuGradientPanel1.Controls.Add(this.btnExit);
             this.bunifuGradientPanel1.Controls.Add(this.btnRegister);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
-            this.bunifuGradientPanel1.Controls.Add(this.txbType);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.txbRePassword);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
@@ -77,15 +78,78 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, -1);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(730, 773);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(728, 773);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Location = new System.Drawing.Point(536, 699);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(130, 45);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Location = new System.Drawing.Point(380, 699);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(130, 45);
+            this.btnRegister.TabIndex = 6;
+            this.btnRegister.Text = "Đăng kí";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(205, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(333, 37);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "ĐĂNG KÍ TÀI KHOẢN";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(67, 369);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 33);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Loại tài khoản:";
+            // 
+            // txbRePassword
+            // 
+            this.txbRePassword.Location = new System.Drawing.Point(289, 544);
+            this.txbRePassword.Name = "txbRePassword";
+            this.txbRePassword.Size = new System.Drawing.Size(381, 26);
+            this.txbRePassword.TabIndex = 5;
+            this.txbRePassword.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 537);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 33);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Nhập lại mật khẩu:";
             // 
             // txbPassword
             // 
             this.txbPassword.Location = new System.Drawing.Point(289, 463);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(381, 26);
-            this.txbPassword.TabIndex = 5;
+            this.txbPassword.TabIndex = 4;
             this.txbPassword.UseSystemPasswordChar = true;
             // 
             // txbDisplayName
@@ -93,7 +157,7 @@
             this.txbDisplayName.Location = new System.Drawing.Point(289, 294);
             this.txbDisplayName.Name = "txbDisplayName";
             this.txbDisplayName.Size = new System.Drawing.Size(381, 26);
-            this.txbDisplayName.TabIndex = 6;
+            this.txbDisplayName.TabIndex = 2;
             // 
             // lbPassword
             // 
@@ -122,7 +186,7 @@
             this.txbAccount.Location = new System.Drawing.Point(289, 215);
             this.txbAccount.Name = "txbAccount";
             this.txbAccount.Size = new System.Drawing.Size(381, 26);
-            this.txbAccount.TabIndex = 7;
+            this.txbAccount.TabIndex = 1;
             // 
             // lbAccount
             // 
@@ -135,80 +199,25 @@
             this.lbAccount.TabIndex = 4;
             this.lbAccount.Text = "Tên đăng nhập:";
             // 
-            // txbRePassword
+            // nudType
             // 
-            this.txbRePassword.Location = new System.Drawing.Point(289, 544);
-            this.txbRePassword.Name = "txbRePassword";
-            this.txbRePassword.Size = new System.Drawing.Size(381, 26);
-            this.txbRePassword.TabIndex = 9;
-            this.txbRePassword.UseSystemPasswordChar = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 537);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 33);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Nhập lại mật khẩu:";
-            // 
-            // txbType
-            // 
-            this.txbType.Location = new System.Drawing.Point(289, 376);
-            this.txbType.Name = "txbType";
-            this.txbType.Size = new System.Drawing.Size(381, 26);
-            this.txbType.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(67, 369);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 33);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Loại tài khoản:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(205, 93);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(333, 37);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "ĐĂNG KÍ TÀI KHOẢN";
-            // 
-            // btnExit
-            // 
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(536, 699);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(130, 45);
-            this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.Location = new System.Drawing.Point(380, 699);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(130, 45);
-            this.btnRegister.TabIndex = 13;
-            this.btnRegister.Text = "Đăng kí";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.nudType.Location = new System.Drawing.Point(289, 375);
+            this.nudType.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudType.Name = "nudType";
+            this.nudType.Size = new System.Drawing.Size(377, 26);
+            this.nudType.TabIndex = 3;
+            this.nudType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fCreateAccount
             // 
+            this.AcceptButton = this.btnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(726, 770);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -217,6 +226,7 @@
             this.Text = "CreateAccount";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudType)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,11 +242,11 @@
         private System.Windows.Forms.TextBox txbAccount;
         private System.Windows.Forms.Label lbAccount;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txbType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbRePassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.NumericUpDown nudType;
     }
 }

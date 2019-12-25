@@ -35,7 +35,6 @@
             this.btnLast = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnFirst = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnWiewBill = new System.Windows.Forms.Button();
@@ -55,7 +54,6 @@
             this.bunifuGradientPanel1.Controls.Add(this.btnLast);
             this.bunifuGradientPanel1.Controls.Add(this.btnBack);
             this.bunifuGradientPanel1.Controls.Add(this.btnFirst);
-            this.bunifuGradientPanel1.Controls.Add(this.button1);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.btnWiewBill);
@@ -124,16 +122,6 @@
             this.btnFirst.UseVisualStyleBackColor = true;
             this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(126, 501);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 71);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Print";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
@@ -161,7 +149,7 @@
             // btnWiewBill
             // 
             this.btnWiewBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWiewBill.Location = new System.Drawing.Point(126, 408);
+            this.btnWiewBill.Location = new System.Drawing.Point(123, 503);
             this.btnWiewBill.Name = "btnWiewBill";
             this.btnWiewBill.Size = new System.Drawing.Size(156, 71);
             this.btnWiewBill.TabIndex = 16;
@@ -220,7 +208,6 @@
         private System.Windows.Forms.DateTimePicker dtpkToDate;
         private System.Windows.Forms.DateTimePicker dtpkFromDate;
         private System.Windows.Forms.DataGridView dtgvBill;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnLast;
