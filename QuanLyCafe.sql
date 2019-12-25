@@ -1,4 +1,4 @@
-﻿CREATE DATABASE QuanLyQuanCafe
+CREATE DATABASE QuanLyQuanCafe
 GO
 
 USE QuanLyQuanCafe
@@ -14,8 +14,8 @@ GO
 CREATE TABLE TableFood
 (
 	id INT IDENTITY PRIMARY KEY,
-	name NVARCHAR(100) NOT NULL DEFAULT N'Bàn chưa có tên',
-	status NVARCHAR(100) NOT NULL DEFAULT N'Trống'	-- Trống || Có người
+	name NVARCHAR(100) NOT NULL DEFAULT N'B�n ch?a c� t�n',
+	status NVARCHAR(100) NOT NULL DEFAULT N'Tr?ng'	-- Tr?ng || C� ng??i
 )
 GO
 
@@ -31,14 +31,14 @@ GO
 CREATE TABLE FoodCategory
 (
 	id INT IDENTITY PRIMARY KEY,
-	name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên'
+	name NVARCHAR(100) NOT NULL DEFAULT N'Ch?a ??t t�n'
 )
 GO
 
 CREATE TABLE Food
 (
 	id INT IDENTITY PRIMARY KEY,
-	name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên',
+	name NVARCHAR(100) NOT NULL DEFAULT N'Ch?a ??t t�n',
 	idCategory INT NOT NULL,
 	price FLOAT NOT NULL DEFAULT 0
 	
@@ -52,7 +52,7 @@ CREATE TABLE Bill
 	DateCheckIn DATE NOT NULL DEFAULT GETDATE(),
 	DateCheckOut DATE,
 	idTable INT NOT NULL,
-	status INT NOT NULL DEFAULT 0, -- 1: đã thanh toán && 0: chưa thanh toán
+	status INT NOT NULL DEFAULT 0, -- 1: ?� thanh to�n && 0: ch?a thanh to�n
 	discount int ,
 	totalPrice float
 	FOREIGN KEY (idTable) REFERENCES TableFood(id)
@@ -72,7 +72,7 @@ CREATE TABLE BillInfo
 )
 GO
 --------------------------
---tạo trigger
+--t?o trigger
 CREATE TRIGGER UTG_UpdateBillInfo
 ON dbo.BillInfo FOR INSERT, UPDATE
 AS
@@ -92,13 +92,13 @@ BEGIN
 	BEGIN
 	
 		
-		UPDATE dbo.TableFood SET status = N'Có người' WHERE id = @idTable		
+		UPDATE dbo.TableFood SET status = N'C� ng??i' WHERE id = @idTable		
 		
 	END		
 	ELSE
 	BEGIN
 
-	UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable	
+	UPDATE dbo.TableFood SET status = N'Tr?ng' WHERE id = @idTable	
 	end
 	
 END
@@ -122,7 +122,7 @@ BEGIN
 	SELECT @count = COUNT(*) FROM dbo.Bill WHERE idTable = @idTable AND status = 0
 	
 	IF (@count = 0)
-		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
+		UPDATE dbo.TableFood SET status = N'Tr?ng' WHERE id = @idTable
 END
 GO
 CREATE TRIGGER UTG_DeleteBillInfo
@@ -141,10 +141,10 @@ BEGIN
 	SELECT @count = COUNT(*) FROM BillInfo AS bi, Bill AS b WHERE b.id = bi.idBill AND b.id = @idBill AND b.status = 0
 	
 	IF (@count = 0)
-		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
+		UPDATE dbo.TableFood SET status = N'Tr?ng' WHERE id = @idTable
 END
 GO
---- Tạo procedure 
+--- T?o procedure 
 CREATE PROC USP_GetAccountByUserName
 @userName nvarchar(100)
 AS 
@@ -152,10 +152,6 @@ BEGIN
 	SELECT * FROM dbo.Account WHERE UserName = @userName
 END
 GO
-
-
-
-
 
 CREATE PROC USP_Login
 @userName nvarchar(100), @passWord nvarchar(100)
@@ -165,12 +161,12 @@ BEGIN
 END
 GO
 
--- thêm bàn
+-- th�m b�n
 DECLARE @i INT = 0
 
 WHILE @i <= 10
 BEGIN
-	INSERT dbo.TableFood ( name)VALUES  ( N'Bàn ' + CAST(@i AS nvarchar(100)))
+	INSERT dbo.TableFood ( name)VALUES  ( N'B�n ' + CAST(@i AS nvarchar(100)))
 	SET @i = @i + 1
 END
 GO
@@ -232,10 +228,6 @@ BEGIN
 	END
 END
 GO
-
-
-
-
 
 
 
@@ -303,10 +295,10 @@ AS BEGIN
 	DROP TABLE IDBillInfoTable
 	
 	IF (@isFirstTablEmty = 0)
-		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable2
+		UPDATE dbo.TableFood SET status = N'Tr?ng' WHERE id = @idTable2
 		
 	IF (@isSecondTablEmty= 0)
-		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable1
+		UPDATE dbo.TableFood SET status = N'Tr?ng' WHERE id = @idTable1
 END
 GO
 
@@ -316,7 +308,7 @@ Create PROC USP_GetListBillByDate
 @checkIn date, @checkOut date
 AS 
 BEGIN
-	SELECT t.name AS [Tên bàn],  DateCheckIn AS [Từ ngày], DateCheckOut AS [Tới ngày], discount AS [Giảm giá],b.totalPrice AS [Tổng tiền (000 VND)]
+	SELECT t.name AS [T�n b�n],  DateCheckIn AS [T? ng�y], DateCheckOut AS [T?i ng�y], discount AS [Gi?m gi�],b.totalPrice AS [T?ng ti?n (000 VND)]
 	FROM dbo.Bill AS b,dbo.TableFood AS t
 	WHERE DateCheckIn >= @checkIn AND DateCheckOut <= @checkOut AND b.status = 1
 	AND t.id = b.idTable
@@ -353,7 +345,7 @@ BEGIN
 	DECLARE @selectRows INT = @pageRows
 	DECLARE @exceptRows INT = (@page - 1) * @pageRows
 	
-	;WITH BillShow AS( SELECT b.ID, t.name AS [Tên bàn], b.totalPrice AS [Tổng tiền], DateCheckIn AS [Từ ngày], DateCheckOut AS [Tới ngày], discount AS [Giảm giá]
+	;WITH BillShow AS( SELECT b.ID, t.name AS [T�n b�n], b.totalPrice AS [T?ng ti?n], DateCheckIn AS [T? ng�y], DateCheckOut AS [T?i ng�y], discount AS [Gi?m gi�]
 	FROM dbo.Bill AS b,dbo.TableFood AS t
 	WHERE DateCheckIn >= @checkIn AND DateCheckOut <= @checkOut AND b.status = 1
 	AND t.id = b.idTable)
@@ -372,7 +364,7 @@ BEGIN
 	AND t.id = b.idTable
 END
 GO
---------------------------- thêm dữ liệu
+--------------------------- th�m d? li?u
 
 INSERT INTO dbo.ACCOUNT(USERNAME,DISPLAYNAME,PASSWORD,TYPE) 
 VALUES (N'thanh',N'thanh',N'1',1)
@@ -381,35 +373,35 @@ INSERT INTO dbo.ACCOUNT(USERNAME,DISPLAYNAME,PASSWORD,TYPE)
 VALUES (N'staff',N'staff',N'1',0)
 
 
--- thêm bàn
+-- th�m b�n
 
 set identity_insert dbo.TableFood on
 
 
-insert into TABLEFOOD(ID,NAME,STATUS) values(1,N'Bàn 1',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(2,N'Bàn 2',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(3,N'Bàn 3',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(4,N'Bàn 4',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(5,N'Bàn 5',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(6,N'Bàn 6',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(7,N'Bàn 7',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(8,N'Bàn 8',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(9,N'Bàn 9',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(10,N'Bàn 10',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(11,N'Bàn 11',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(12,N'Bàn 12',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(13,N'Bàn 13',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(14,N'Bàn 14',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(15,N'Bàn 15',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(16,N'Bàn 16',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(17,N'Bàn 17',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(18,N'Bàn 18',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(19,N'Bàn 19',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(20,N'Bàn 20',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(21,N'Bàn 21',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(22,N'Bàn 22',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(23,N'Bàn 23',N'Trống')
-insert into TABLEFOOD(ID,NAME,STATUS) values(24,N'Bàn 24',N'Trống')
+insert into TABLEFOOD(ID,NAME,STATUS) values(1,N'B�n 1',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(2,N'B�n 2',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(3,N'B�n 3',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(4,N'B�n 4',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(5,N'B�n 5',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(6,N'B�n 6',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(7,N'B�n 7',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(8,N'B�n 8',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(9,N'B�n 9',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(10,N'B�n 10',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(11,N'B�n 11',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(12,N'B�n 12',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(13,N'B�n 13',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(14,N'B�n 14',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(15,N'B�n 15',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(16,N'B�n 16',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(17,N'B�n 17',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(18,N'B�n 18',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(19,N'B�n 19',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(20,N'B�n 20',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(21,N'B�n 21',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(22,N'B�n 22',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(23,N'B�n 23',N'Tr?ng')
+insert into TABLEFOOD(ID,NAME,STATUS) values(24,N'B�n 24',N'Tr?ng')
 set identity_insert dbo.TableFood off
 SELECT * FROM TABLEFOOD
 
@@ -419,17 +411,16 @@ SELECT * FROM TABLEFOOD
 set identity_insert FOODCATEGORY on
 
 
-INSERT FOODCATEGORY(ID,NAME) VALUES (1,N'Trà')
-INSERT FOODCATEGORY(ID,NAME) VALUES (2,N'Đá xay')
-INSERT FOODCATEGORY(ID,NAME) VALUES (3,N'Sinh tố')
+INSERT FOODCATEGORY(ID,NAME) VALUES (1,N'Tr�')
+INSERT FOODCATEGORY(ID,NAME) VALUES (2,N'?� xay')
+INSERT FOODCATEGORY(ID,NAME) VALUES (3,N'Sinh t?')
 INSERT FOODCATEGORY(ID,NAME) VALUES (4,N'Cafe')
-INSERT FOODCATEGORY(ID,NAME) VALUES (5,N'Đồ ăn')
-
+INSERT FOODCATEGORY(ID,NAME) VALUES (5,N'?? ?n')
+set identity_insert FOODCATEGORY off
 SELECT * FROM FOODCATEGORY 
---thêm nước uống và đồ ăn
+--th�m n??c u?ng v� ?? ?n
 
 set identity_insert dbo.Food on 
-INSERT into Food(Name,idCategory,price) values (" + name + ", " + idcategory + ", " + price + " )
 -- id: 1-Tra
 INSERT into Food(id,Name,idCategory,price) values ('01','Oolong Milk Tea','1','45000')
 insert into Food(id,Name,idCategory,price) values('02','Tra dao','1','25000')
@@ -491,6 +482,4 @@ insert into Food(id,Name,idCategory,price) values('48','Hoanh thanh','5','10000'
 insert into Food(id,Name,idCategory,price) values('49','Ha cao','5','15000')
 insert into Food(id,Name,idCategory,price) values('50','Mi trung','5','15000')
 set identity_insert FOODCATEGORY off
-SELECT* from FoodCategory
-select * from food
 

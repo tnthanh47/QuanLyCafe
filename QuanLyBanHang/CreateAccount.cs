@@ -39,7 +39,7 @@ namespace QuanLyBanHang
         {
             string username = txbAccount.Text;
             string displayname = txbDisplayName.Text;
-            int type = Convert.ToInt32(txbType.Text);
+            int type = Convert.ToInt32(nudType.Value);
             string password = txbPassword.Text;
             string repassword = txbRePassword.Text;
             if (CompareAccount(username) == true)
