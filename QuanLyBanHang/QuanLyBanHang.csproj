@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\New folder\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\Bunifu\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="LinqToTwitter.AspNet, Version=5.0.0.14073, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\linqtotwitter.5.0.0\lib\net461\LinqToTwitter.AspNet.dll</HintPath>
@@ -93,6 +93,12 @@
     <Compile Include="DAO\MenuDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="ShowBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowBill.Designer.cs">
+      <DependentUpon>ShowBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsC_Drink.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ShowBill.resx">
+      <DependentUpon>ShowBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsC_Drink.resx">
       <DependentUpon>UsC_Drink.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,9 +241,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\show.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\..\New folder\Bunifu_UI_v1.5.3.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
