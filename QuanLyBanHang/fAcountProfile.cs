@@ -26,6 +26,7 @@ namespace QuanLyBanHang
         {
             txbAccount.Text = LoginAccount.UserName;
             txbDisplayName.Text = LoginAccount.DisplayName;
+            txbType.Text = loginAccount.Type.ToString();
         }
         void UpdateAccountInfo()
         {
@@ -84,6 +85,9 @@ namespace QuanLyBanHang
             }
         }
 
+        private void txbAccount_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

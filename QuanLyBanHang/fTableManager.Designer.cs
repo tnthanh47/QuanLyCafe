@@ -224,6 +224,7 @@
             this.txb_Money.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Money.Multiline = true;
             this.txb_Money.Name = "txb_Money";
+            this.txb_Money.ReadOnly = true;
             this.txb_Money.Size = new System.Drawing.Size(388, 35);
             this.txb_Money.TabIndex = 17;
             this.txb_Money.Text = "0";
@@ -520,7 +521,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListView lsvBill;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
@@ -552,5 +552,6 @@
         private System.Windows.Forms.ComboBox cbFood;
         private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.NumericUpDown nudFood;
+        public System.Windows.Forms.ListView lsvBill;
     }
 }
